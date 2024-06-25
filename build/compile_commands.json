@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/utility -g -std=gnu++17 -o src/epoll/Socket/CMakeFiles/socket.dir/client_socket.cpp.o -c /home/breeze/exercise/web/src/epoll/Socket/client_socket.cpp",
+  "file": "/home/breeze/exercise/web/src/epoll/Socket/client_socket.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/utility -g -std=gnu++17 -o src/epoll/Socket/CMakeFiles/socket.dir/server_socket.cpp.o -c /home/breeze/exercise/web/src/epoll/Socket/server_socket.cpp",
+  "file": "/home/breeze/exercise/web/src/epoll/Socket/server_socket.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/utility -g -std=gnu++17 -o src/epoll/Socket/CMakeFiles/socket.dir/socket.cpp.o -c /home/breeze/exercise/web/src/epoll/Socket/socket.cpp",
+  "file": "/home/breeze/exercise/web/src/epoll/Socket/socket.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/epoll/Socket -I/home/breeze/exercise/web/src/epoll/EventPoller -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/epoll/Task -g -std=gnu++17 -o src/epoll/SocketHandler/CMakeFiles/socketHandler.dir/socket_handler.cpp.o -c /home/breeze/exercise/web/src/epoll/SocketHandler/socket_handler.cpp",
+  "file": "/home/breeze/exercise/web/src/epoll/SocketHandler/socket_handler.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/epoll/Socket -I/home/breeze/exercise/web/src/utility -g -std=gnu++17 -o src/epoll/Task/CMakeFiles/Task.dir/echo_task.cpp.o -c /home/breeze/exercise/web/src/epoll/Task/echo_task.cpp",
+  "file": "/home/breeze/exercise/web/src/epoll/Task/echo_task.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -DValue_EXPORTS -g -fPIC -std=gnu++17 -o src/utility/CMakeFiles/Value.dir/Logger.cpp.o -c /home/breeze/exercise/web/src/utility/Logger.cpp",
+  "file": "/home/breeze/exercise/web/src/utility/Logger.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -DValue_EXPORTS -g -fPIC -std=gnu++17 -o src/utility/CMakeFiles/Value.dir/Value.cpp.o -c /home/breeze/exercise/web/src/utility/Value.cpp",
+  "file": "/home/breeze/exercise/web/src/utility/Value.cpp"
+}
+]

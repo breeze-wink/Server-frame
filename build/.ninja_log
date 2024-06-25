@@ -1,0 +1,16 @@
+# ninja log v5
+1	447	1719307607648039551	src/epoll/Socket/CMakeFiles/socket.dir/client_socket.cpp.o	e60e0abe313bb624
+1	447	1719307607648039551	src/epoll/Socket/CMakeFiles/socket.dir/server_socket.cpp.o	e717c913b4c83c40
+1	467	1719307607668040067	src/epoll/Socket/CMakeFiles/socket.dir/socket.cpp.o	b1bea57e1c207480
+467	528	1719307607712041202	../lib/libsocket.a	49ce006fa0c85803
+1	412	1719319421530509577	src/epoll/Socket/CMakeFiles/socket.dir/server_socket.cpp.o	d5af4b0b60bd674b
+2	422	1719319421542509890	src/epoll/Task/CMakeFiles/Task.dir/echo_task.cpp.o	50c3fcc03c9a3c0f
+2	425	1719319421546509994	src/utility/CMakeFiles/Value.dir/Value.cpp.o	581a421da2a1f82d
+1	435	1719319421554510202	src/epoll/Socket/CMakeFiles/socket.dir/socket.cpp.o	f57fafcac4160012
+422	476	1719319421578510827	../lib/libTask.a	83eb9a11a2d3866f
+0	485	1719319421606511556	src/epoll/Socket/CMakeFiles/socket.dir/client_socket.cpp.o	8dc970464413b56d
+2	493	1719319421614511765	src/utility/CMakeFiles/Value.dir/Logger.cpp.o	ef55e89ebf3abf52
+1	495	1719319421614511765	src/epoll/SocketHandler/CMakeFiles/socketHandler.dir/socket_handler.cpp.o	94fc14f215fe89e6
+485	540	1719319421638512390	../lib/libsocket.a	49ce006fa0c85803
+495	540	1719319421646512598	../lib/libsocketHandler.a	2bc99da026256bab
+493	599	1719319421722514576	../lib/libValue.so	2ee205d4d6da48bd

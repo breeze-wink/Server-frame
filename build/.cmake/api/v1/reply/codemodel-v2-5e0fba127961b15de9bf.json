@@ -1,0 +1,259 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						2,
+						7
+					],
+					"jsonFile" : "directory-src-Debug-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/epoll",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5,
+						6
+					],
+					"jsonFile" : "directory-src.epoll-Debug-f63aba9408e0713308c6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "src/epoll"
+				},
+				{
+					"build" : "src/epoll/Socket",
+					"jsonFile" : "directory-src.epoll.Socket-Debug-ed205f3dbf4d72f89f8f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "src/epoll/Socket",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "src/epoll/SocketHandler",
+					"jsonFile" : "directory-src.epoll.SocketHandler-Debug-ade46995afbdc08a062f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 3,
+					"source" : "src/epoll/SocketHandler",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "src/epoll/EventPoller",
+					"jsonFile" : "directory-src.epoll.EventPoller-Debug-8e3741b5f0c952a72932.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 4,
+					"source" : "src/epoll/EventPoller"
+				},
+				{
+					"build" : "src/epoll/Task",
+					"jsonFile" : "directory-src.epoll.Task-Debug-c702fbf66a77bfdfcbb4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 5,
+					"source" : "src/epoll/Task",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "src/utility",
+					"jsonFile" : "directory-src.utility-Debug-77569dd1d53133694646.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 6,
+					"source" : "src/utility",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "tiny-webserver"
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Epoll",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "socket",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "socketHandler",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "event_poller",
+					"parentIndex" : 1
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "Task",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "Value",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 6,
+					"id" : "Task::@ab3d342bc6b5184a814c",
+					"jsonFile" : "target-Task-Debug-5599fc7b9b4db0cdfa2a.json",
+					"name" : "Task",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "Value::@d11917d783b4c5ebb356",
+					"jsonFile" : "target-Value-Debug-0a985217636c3ccacf77.json",
+					"name" : "Value",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "socket::@ed9016cf935b12141179",
+					"jsonFile" : "target-socket-Debug-73af2d1f03d763fa9d5f.json",
+					"name" : "socket",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "socketHandler::@329f23519bffde337000",
+					"jsonFile" : "target-socketHandler-Debug-bb3b8943b4fb60c154f1.json",
+					"name" : "socketHandler",
+					"projectIndex" : 3
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/breeze/exercise/web/build",
+		"source" : "/home/breeze/exercise/web"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
