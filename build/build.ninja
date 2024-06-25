@@ -120,6 +120,149 @@ build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 # /home/breeze/exercise/web/src/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target utility
+
+
+#############################################
+# Order-only phony target for utility
+
+build cmake_object_order_depends_target_utility: phony || src/utility/CMakeFiles/utility.dir
+
+build src/utility/CMakeFiles/utility.dir/Logger.cpp.o: CXX_COMPILER__utility_Debug /home/breeze/exercise/web/src/utility/Logger.cpp || cmake_object_order_depends_target_utility
+  DEP_FILE = src/utility/CMakeFiles/utility.dir/Logger.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = src/utility/CMakeFiles/utility.dir
+  OBJECT_FILE_DIR = src/utility/CMakeFiles/utility.dir
+
+build src/utility/CMakeFiles/utility.dir/Value.cpp.o: CXX_COMPILER__utility_Debug /home/breeze/exercise/web/src/utility/Value.cpp || cmake_object_order_depends_target_utility
+  DEP_FILE = src/utility/CMakeFiles/utility.dir/Value.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = src/utility/CMakeFiles/utility.dir
+  OBJECT_FILE_DIR = src/utility/CMakeFiles/utility.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target utility
+
+
+#############################################
+# Link the static library ../lib/libutility.a
+
+build ../lib/libutility.a: CXX_STATIC_LIBRARY_LINKER__utility_Debug src/utility/CMakeFiles/utility.dir/Logger.cpp.o src/utility/CMakeFiles/utility.dir/Value.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = src/utility/CMakeFiles/utility.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ../lib/libutility.a
+  TARGET_PDB = utility.a.dbg
+
+
+#############################################
+# Utility command for test
+
+build src/utility/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/utility && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build src/utility/test: phony src/utility/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/utility/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/utility && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/utility/edit_cache: phony src/utility/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/utility/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/utility && /usr/bin/cmake --regenerate-during-build -S/home/breeze/exercise/web -B/home/breeze/exercise/web/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/utility/rebuild_cache: phony src/utility/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/breeze/exercise/web/src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Client
+
+
+#############################################
+# Order-only phony target for Client
+
+build cmake_object_order_depends_target_Client: phony || cmake_object_order_depends_target_Task cmake_object_order_depends_target_event_poller cmake_object_order_depends_target_socket cmake_object_order_depends_target_socketHandler cmake_object_order_depends_target_utility
+
+build src/epoll/CMakeFiles/Client.dir/client.cpp.o: CXX_COMPILER__Client_Debug /home/breeze/exercise/web/src/epoll/client.cpp || cmake_object_order_depends_target_Client
+  DEP_FILE = src/epoll/CMakeFiles/Client.dir/client.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/breeze/exercise/web/src/epoll/Socket -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/epoll/EventPoller -I/home/breeze/exercise/web/src/epoll/Task
+  OBJECT_DIR = src/epoll/CMakeFiles/Client.dir
+  OBJECT_FILE_DIR = src/epoll/CMakeFiles/Client.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Client
+
+
+#############################################
+# Link the executable ../bin/Client
+
+build ../bin/Client: CXX_EXECUTABLE_LINKER__Client_Debug src/epoll/CMakeFiles/Client.dir/client.cpp.o | ../lib/libTask.a ../lib/libsocketHandler.a ../lib/libevent_poller.a ../lib/libsocket.a ../lib/libutility.a ../lib/libTask.a || ../lib/libTask.a ../lib/libevent_poller.a ../lib/libsocket.a ../lib/libsocketHandler.a ../lib/libutility.a
+  FLAGS = -g
+  LINK_LIBRARIES = ../lib/libTask.a  ../lib/libsocketHandler.a  ../lib/libevent_poller.a  ../lib/libsocket.a  ../lib/libutility.a  ../lib/libTask.a
+  OBJECT_DIR = src/epoll/CMakeFiles/Client.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ../bin/Client
+  TARGET_PDB = Client.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Server
+
+
+#############################################
+# Order-only phony target for Server
+
+build cmake_object_order_depends_target_Server: phony || cmake_object_order_depends_target_Task cmake_object_order_depends_target_event_poller cmake_object_order_depends_target_socket cmake_object_order_depends_target_socketHandler cmake_object_order_depends_target_utility
+
+build src/epoll/CMakeFiles/Server.dir/server.cpp.o: CXX_COMPILER__Server_Debug /home/breeze/exercise/web/src/epoll/server.cpp || cmake_object_order_depends_target_Server
+  DEP_FILE = src/epoll/CMakeFiles/Server.dir/server.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/breeze/exercise/web/src/epoll/SocketHandler -I/home/breeze/exercise/web/src/epoll/Socket -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/epoll/EventPoller -I/home/breeze/exercise/web/src/epoll/Task
+  OBJECT_DIR = src/epoll/CMakeFiles/Server.dir
+  OBJECT_FILE_DIR = src/epoll/CMakeFiles/Server.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Server
+
+
+#############################################
+# Link the executable ../bin/Server
+
+build ../bin/Server: CXX_EXECUTABLE_LINKER__Server_Debug src/epoll/CMakeFiles/Server.dir/server.cpp.o | ../lib/libTask.a ../lib/libsocketHandler.a ../lib/libevent_poller.a ../lib/libsocket.a ../lib/libutility.a ../lib/libTask.a || ../lib/libTask.a ../lib/libevent_poller.a ../lib/libsocket.a ../lib/libsocketHandler.a ../lib/libutility.a
+  FLAGS = -g
+  LINK_LIBRARIES = ../lib/libTask.a  ../lib/libsocketHandler.a  ../lib/libevent_poller.a  ../lib/libsocket.a  ../lib/libutility.a  ../lib/libTask.a
+  OBJECT_DIR = src/epoll/CMakeFiles/Server.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ../bin/Server
+  TARGET_PDB = Server.dbg
+
 
 #############################################
 # Utility command for test
@@ -247,118 +390,6 @@ build src/epoll/Socket/rebuild_cache: phony src/epoll/Socket/CMakeFiles/rebuild_
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target socketHandler
-
-
-#############################################
-# Order-only phony target for socketHandler
-
-build cmake_object_order_depends_target_socketHandler: phony || src/epoll/SocketHandler/CMakeFiles/socketHandler.dir
-
-build src/epoll/SocketHandler/CMakeFiles/socketHandler.dir/socket_handler.cpp.o: CXX_COMPILER__socketHandler_Debug /home/breeze/exercise/web/src/epoll/SocketHandler/socket_handler.cpp || cmake_object_order_depends_target_socketHandler
-  DEP_FILE = src/epoll/SocketHandler/CMakeFiles/socketHandler.dir/socket_handler.cpp.o.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/breeze/exercise/web/src/epoll/Socket -I/home/breeze/exercise/web/src/epoll/EventPoller -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/epoll/Task
-  OBJECT_DIR = src/epoll/SocketHandler/CMakeFiles/socketHandler.dir
-  OBJECT_FILE_DIR = src/epoll/SocketHandler/CMakeFiles/socketHandler.dir
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target socketHandler
-
-
-#############################################
-# Link the static library ../lib/libsocketHandler.a
-
-build ../lib/libsocketHandler.a: CXX_STATIC_LIBRARY_LINKER__socketHandler_Debug src/epoll/SocketHandler/CMakeFiles/socketHandler.dir/socket_handler.cpp.o
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = src/epoll/SocketHandler/CMakeFiles/socketHandler.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = ../lib/libsocketHandler.a
-  TARGET_PDB = socketHandler.a.dbg
-
-
-#############################################
-# Utility command for test
-
-build src/epoll/SocketHandler/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/breeze/exercise/web/build/src/epoll/SocketHandler && /usr/bin/ctest --force-new-ctest-process
-  DESC = Running tests...
-  pool = console
-  restat = 1
-
-build src/epoll/SocketHandler/test: phony src/epoll/SocketHandler/CMakeFiles/test.util
-
-
-#############################################
-# Utility command for edit_cache
-
-build src/epoll/SocketHandler/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/breeze/exercise/web/build/src/epoll/SocketHandler && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build src/epoll/SocketHandler/edit_cache: phony src/epoll/SocketHandler/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build src/epoll/SocketHandler/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/breeze/exercise/web/build/src/epoll/SocketHandler && /usr/bin/cmake --regenerate-during-build -S/home/breeze/exercise/web -B/home/breeze/exercise/web/build
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build src/epoll/SocketHandler/rebuild_cache: phony src/epoll/SocketHandler/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/breeze/exercise/web/src/epoll/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for test
-
-build src/epoll/EventPoller/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/breeze/exercise/web/build/src/epoll/EventPoller && /usr/bin/ctest --force-new-ctest-process
-  DESC = Running tests...
-  pool = console
-  restat = 1
-
-build src/epoll/EventPoller/test: phony src/epoll/EventPoller/CMakeFiles/test.util
-
-
-#############################################
-# Utility command for edit_cache
-
-build src/epoll/EventPoller/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/breeze/exercise/web/build/src/epoll/EventPoller && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build src/epoll/EventPoller/edit_cache: phony src/epoll/EventPoller/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build src/epoll/EventPoller/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/breeze/exercise/web/build/src/epoll/EventPoller && /usr/bin/cmake --regenerate-during-build -S/home/breeze/exercise/web -B/home/breeze/exercise/web/build
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build src/epoll/EventPoller/rebuild_cache: phony src/epoll/EventPoller/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/breeze/exercise/web/src/epoll/CMakeLists.txt
-# =============================================================================
-
-# =============================================================================
 # Object build statements for STATIC_LIBRARY target Task
 
 
@@ -427,103 +458,173 @@ build src/epoll/Task/rebuild_cache: phony src/epoll/Task/CMakeFiles/rebuild_cach
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/breeze/exercise/web/src/CMakeLists.txt
+# /home/breeze/exercise/web/src/epoll/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
-# Object build statements for SHARED_LIBRARY target Value
+# Object build statements for STATIC_LIBRARY target socketHandler
 
 
 #############################################
-# Order-only phony target for Value
+# Order-only phony target for socketHandler
 
-build cmake_object_order_depends_target_Value: phony || src/utility/CMakeFiles/Value.dir
+build cmake_object_order_depends_target_socketHandler: phony || cmake_object_order_depends_target_Task
 
-build src/utility/CMakeFiles/Value.dir/Logger.cpp.o: CXX_COMPILER__Value_Debug /home/breeze/exercise/web/src/utility/Logger.cpp || cmake_object_order_depends_target_Value
-  DEFINES = -DValue_EXPORTS
-  DEP_FILE = src/utility/CMakeFiles/Value.dir/Logger.cpp.o.d
-  FLAGS = -g -fPIC -std=gnu++17
-  OBJECT_DIR = src/utility/CMakeFiles/Value.dir
-  OBJECT_FILE_DIR = src/utility/CMakeFiles/Value.dir
-
-build src/utility/CMakeFiles/Value.dir/Value.cpp.o: CXX_COMPILER__Value_Debug /home/breeze/exercise/web/src/utility/Value.cpp || cmake_object_order_depends_target_Value
-  DEFINES = -DValue_EXPORTS
-  DEP_FILE = src/utility/CMakeFiles/Value.dir/Value.cpp.o.d
-  FLAGS = -g -fPIC -std=gnu++17
-  OBJECT_DIR = src/utility/CMakeFiles/Value.dir
-  OBJECT_FILE_DIR = src/utility/CMakeFiles/Value.dir
+build src/epoll/SocketHandler/CMakeFiles/socketHandler.dir/socket_handler.cpp.o: CXX_COMPILER__socketHandler_Debug /home/breeze/exercise/web/src/epoll/SocketHandler/socket_handler.cpp || cmake_object_order_depends_target_socketHandler
+  DEP_FILE = src/epoll/SocketHandler/CMakeFiles/socketHandler.dir/socket_handler.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/breeze/exercise/web/src/epoll/Socket -I/home/breeze/exercise/web/src/epoll/EventPoller -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/epoll/Task
+  OBJECT_DIR = src/epoll/SocketHandler/CMakeFiles/socketHandler.dir
+  OBJECT_FILE_DIR = src/epoll/SocketHandler/CMakeFiles/socketHandler.dir
 
 
 # =============================================================================
-# Link build statements for SHARED_LIBRARY target Value
+# Link build statements for STATIC_LIBRARY target socketHandler
 
 
 #############################################
-# Link the shared library ../lib/libValue.so
+# Link the static library ../lib/libsocketHandler.a
 
-build ../lib/libValue.so: CXX_SHARED_LIBRARY_LINKER__Value_Debug src/utility/CMakeFiles/Value.dir/Logger.cpp.o src/utility/CMakeFiles/Value.dir/Value.cpp.o
+build ../lib/libsocketHandler.a: CXX_STATIC_LIBRARY_LINKER__socketHandler_Debug src/epoll/SocketHandler/CMakeFiles/socketHandler.dir/socket_handler.cpp.o || ../lib/libTask.a
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = src/utility/CMakeFiles/Value.dir
+  OBJECT_DIR = src/epoll/SocketHandler/CMakeFiles/socketHandler.dir
   POST_BUILD = :
   PRE_LINK = :
-  SONAME = libValue.so
-  SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = ../lib/libValue.so
-  TARGET_PDB = Value.so.dbg
+  TARGET_FILE = ../lib/libsocketHandler.a
+  TARGET_PDB = socketHandler.a.dbg
 
 
 #############################################
 # Utility command for test
 
-build src/utility/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/breeze/exercise/web/build/src/utility && /usr/bin/ctest --force-new-ctest-process
+build src/epoll/SocketHandler/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/epoll/SocketHandler && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
 
-build src/utility/test: phony src/utility/CMakeFiles/test.util
+build src/epoll/SocketHandler/test: phony src/epoll/SocketHandler/CMakeFiles/test.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build src/utility/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/breeze/exercise/web/build/src/utility && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+build src/epoll/SocketHandler/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/epoll/SocketHandler && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build src/utility/edit_cache: phony src/utility/CMakeFiles/edit_cache.util
+build src/epoll/SocketHandler/edit_cache: phony src/epoll/SocketHandler/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build src/utility/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/breeze/exercise/web/build/src/utility && /usr/bin/cmake --regenerate-during-build -S/home/breeze/exercise/web -B/home/breeze/exercise/web/build
+build src/epoll/SocketHandler/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/epoll/SocketHandler && /usr/bin/cmake --regenerate-during-build -S/home/breeze/exercise/web -B/home/breeze/exercise/web/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build src/utility/rebuild_cache: phony src/utility/CMakeFiles/rebuild_cache.util
+build src/epoll/SocketHandler/rebuild_cache: phony src/epoll/SocketHandler/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/breeze/exercise/web/src/epoll/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target event_poller
+
+
+#############################################
+# Order-only phony target for event_poller
+
+build cmake_object_order_depends_target_event_poller: phony || src/epoll/EventPoller/CMakeFiles/event_poller.dir
+
+build src/epoll/EventPoller/CMakeFiles/event_poller.dir/event_poller.cpp.o: CXX_COMPILER__event_poller_Debug /home/breeze/exercise/web/src/epoll/EventPoller/event_poller.cpp || cmake_object_order_depends_target_event_poller
+  DEP_FILE = src/epoll/EventPoller/CMakeFiles/event_poller.dir/event_poller.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = src/epoll/EventPoller/CMakeFiles/event_poller.dir
+  OBJECT_FILE_DIR = src/epoll/EventPoller/CMakeFiles/event_poller.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target event_poller
+
+
+#############################################
+# Link the static library ../lib/libevent_poller.a
+
+build ../lib/libevent_poller.a: CXX_STATIC_LIBRARY_LINKER__event_poller_Debug src/epoll/EventPoller/CMakeFiles/event_poller.dir/event_poller.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = src/epoll/EventPoller/CMakeFiles/event_poller.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ../lib/libevent_poller.a
+  TARGET_PDB = event_poller.a.dbg
+
+
+#############################################
+# Utility command for test
+
+build src/epoll/EventPoller/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/epoll/EventPoller && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build src/epoll/EventPoller/test: phony src/epoll/EventPoller/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/epoll/EventPoller/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/epoll/EventPoller && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/epoll/EventPoller/edit_cache: phony src/epoll/EventPoller/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/epoll/EventPoller/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/epoll/EventPoller && /usr/bin/cmake --regenerate-during-build -S/home/breeze/exercise/web -B/home/breeze/exercise/web/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/epoll/EventPoller/rebuild_cache: phony src/epoll/EventPoller/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
 
+build Client: phony ../bin/Client
+
+build Server: phony ../bin/Server
+
 build Task: phony ../lib/libTask.a
 
-build Value: phony ../lib/libValue.so
+build event_poller: phony ../lib/libevent_poller.a
 
 build libTask.a: phony ../lib/libTask.a
 
-build libValue.so: phony ../lib/libValue.so
+build libevent_poller.a: phony ../lib/libevent_poller.a
 
 build libsocket.a: phony ../lib/libsocket.a
 
 build libsocketHandler.a: phony ../lib/libsocketHandler.a
 
+build libutility.a: phony ../lib/libutility.a
+
 build socket: phony ../lib/libsocket.a
 
 build socketHandler: phony ../lib/libsocketHandler.a
+
+build utility: phony ../lib/libutility.a
 
 # =============================================================================
 # Folder targets.
@@ -540,21 +641,21 @@ build all: phony src/all
 #############################################
 # Folder: /home/breeze/exercise/web/build/src
 
-build src/all: phony src/epoll/all src/utility/all
+build src/all: phony src/utility/all src/epoll/all
 
 # =============================================================================
 
 #############################################
 # Folder: /home/breeze/exercise/web/build/src/epoll
 
-build src/epoll/all: phony src/epoll/Socket/all src/epoll/SocketHandler/all src/epoll/EventPoller/all src/epoll/Task/all
+build src/epoll/all: phony ../bin/Client ../bin/Server src/epoll/Socket/all src/epoll/Task/all src/epoll/SocketHandler/all src/epoll/EventPoller/all
 
 # =============================================================================
 
 #############################################
 # Folder: /home/breeze/exercise/web/build/src/epoll/EventPoller
 
-build src/epoll/EventPoller/all: phony
+build src/epoll/EventPoller/all: phony ../lib/libevent_poller.a
 
 # =============================================================================
 
@@ -582,7 +683,7 @@ build src/epoll/Task/all: phony ../lib/libTask.a
 #############################################
 # Folder: /home/breeze/exercise/web/build/src/utility
 
-build src/utility/all: phony ../lib/libValue.so
+build src/utility/all: phony ../lib/libutility.a
 
 # =============================================================================
 # Built-in targets

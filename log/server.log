@@ -1,0 +1,10 @@
+2024-06-26 03:09:35 DEBUG /home/breeze/exercise/web/src/epoll/Socket/socket.cpp:12 create socket success!
+2024-06-26 03:09:35 DEBUG /home/breeze/exercise/web/src/epoll/Socket/socket.cpp:45 socket bind success: ip = 127.0.0.1, port = 8080
+2024-06-26 03:09:35 DEBUG /home/breeze/exercise/web/src/epoll/Socket/socket.cpp:56 socket listening ...
+2024-06-26 03:09:53 DEBUG /home/breeze/exercise/web/src/epoll/Socket/socket.cpp:86 socket accept success, connfd = 6
+2024-06-26 03:09:53 DEBUG /home/breeze/exercise/web/src/epoll/Task/echo_task.cpp:16 echo task run
+2024-06-26 03:09:53 DEBUG /home/breeze/exercise/web/src/epoll/Task/echo_task.cpp:49 recv: conn = 6, msg = hello Server
+2024-06-26 03:09:53 DEBUG /home/breeze/exercise/web/src/epoll/Task/echo_task.cpp:59 echo task destroy
+2024-06-26 03:09:53 DEBUG /home/breeze/exercise/web/src/epoll/Task/echo_task.cpp:16 echo task run
+2024-06-26 03:09:53 DEBUG /home/breeze/exercise/web/src/epoll/Task/echo_task.cpp:43 socket closed by peer : conn = 6
+2024-06-26 03:09:53 DEBUG /home/breeze/exercise/web/src/epoll/Task/echo_task.cpp:59 echo task destroy

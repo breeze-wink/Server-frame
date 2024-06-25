@@ -279,6 +279,15 @@ tiny-webserver_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 tiny-webserver_SOURCE_DIR:STATIC=/home/breeze/exercise/web
 
+//Value Computed by CMake
+utility_BINARY_DIR:STATIC=/home/breeze/exercise/web/build/src/utility
+
+//Value Computed by CMake
+utility_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+utility_SOURCE_DIR:STATIC=/home/breeze/exercise/web/src/utility
+
 
 ########################
 # INTERNAL cache entries

@@ -12,7 +12,7 @@ using namespace breeze::socket;
 
 int main()
 {
-    Singleton<Logger>::Instance() -> open("../client.log");
+    Singleton<Logger>::Instance() -> open("/home/breeze/exercise/web/client.log");
     // Socket client;
     // client.connect("127.0.0.1", 8080);
     Client_socket client("127.0.0.1", 8080);

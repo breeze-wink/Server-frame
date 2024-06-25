@@ -1,5 +1,5 @@
 project(Epoll
-    DESCRIPTION "对Epoll的功能进行封装"
+    DESCRIPTION "围绕Epoll，对各种功能进行封装"
 )
 
 set(socket_Dir ${CMAKE_CURRENT_SOURCE_DIR}/Socket)
@@ -8,6 +8,18 @@ set(socketHandler_Dir ${PROJECT_SOURCE_DIR}/SocketHandler)
 set(task_dir ${CMAKE_CURRENT_SOURCE_DIR}/Task)
 
 add_subdirectory(${socket_Dir})
+add_subdirectory(${task_dir})
 add_subdirectory(${socketHandler_Dir})
 add_subdirectory(${event_poller_dir})
-add_subdirectory(${task_dir})
+
+
+set(library_list Task socketHandler event_poller socket utility)
+
+add_executable(Client client.cpp)
+add_executable(Server server.cpp)
+
+target_include_directories(Client PUBLIC ${socket_Dir})
+target_include_directories(Server PUBLIC ${socketHandler_Dir})
+
+target_link_libraries(Client ${library_list})
+target_link_libraries(Server ${library_list})
