@@ -38,7 +38,7 @@ namespace breeze
                 LOG_WARN,
                 LOG_ERROR,
                 LOG_FATAL,
-                LOG_COUNT //会默认1, 2, 3, 4, 5 排下来
+                LOG_COUNT
             };
 
 

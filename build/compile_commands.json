@@ -11,6 +11,11 @@
 },
 {
   "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -g -std=gnu++17 -o src/utility/CMakeFiles/utility.dir/iniFile.cpp.o -c /home/breeze/exercise/web/src/utility/iniFile.cpp",
+  "file": "/home/breeze/exercise/web/src/utility/iniFile.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
   "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/utility -g -std=gnu++17 -o src/thread/CMakeFiles/ThreadPool.dir/task.cpp.o -c /home/breeze/exercise/web/src/thread/task.cpp",
   "file": "/home/breeze/exercise/web/src/thread/task.cpp"
 },

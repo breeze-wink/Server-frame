@@ -38,7 +38,6 @@ void SocketHandler::handle(int max_conn, int timeout)
         }
         else if (num == 0)
         {
-            log_debug("epoll wait timeout");
             continue;
         }
         for (int i = 0; i < num; ++ i)

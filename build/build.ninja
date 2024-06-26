@@ -141,6 +141,12 @@ build src/utility/CMakeFiles/utility.dir/Value.cpp.o: CXX_COMPILER__utility_Debu
   OBJECT_DIR = src/utility/CMakeFiles/utility.dir
   OBJECT_FILE_DIR = src/utility/CMakeFiles/utility.dir
 
+build src/utility/CMakeFiles/utility.dir/iniFile.cpp.o: CXX_COMPILER__utility_Debug /home/breeze/exercise/web/src/utility/iniFile.cpp || cmake_object_order_depends_target_utility
+  DEP_FILE = src/utility/CMakeFiles/utility.dir/iniFile.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = src/utility/CMakeFiles/utility.dir
+  OBJECT_FILE_DIR = src/utility/CMakeFiles/utility.dir
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target utility
@@ -149,7 +155,7 @@ build src/utility/CMakeFiles/utility.dir/Value.cpp.o: CXX_COMPILER__utility_Debu
 #############################################
 # Link the static library ../lib/libutility.a
 
-build ../lib/libutility.a: CXX_STATIC_LIBRARY_LINKER__utility_Debug src/utility/CMakeFiles/utility.dir/Logger.cpp.o src/utility/CMakeFiles/utility.dir/Value.cpp.o
+build ../lib/libutility.a: CXX_STATIC_LIBRARY_LINKER__utility_Debug src/utility/CMakeFiles/utility.dir/Logger.cpp.o src/utility/CMakeFiles/utility.dir/Value.cpp.o src/utility/CMakeFiles/utility.dir/iniFile.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = src/utility/CMakeFiles/utility.dir
   POST_BUILD = :
