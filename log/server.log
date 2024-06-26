@@ -8,3 +8,28 @@
 2024-06-26 03:09:53 DEBUG /home/breeze/exercise/web/src/epoll/Task/echo_task.cpp:16 echo task run
 2024-06-26 03:09:53 DEBUG /home/breeze/exercise/web/src/epoll/Task/echo_task.cpp:43 socket closed by peer : conn = 6
 2024-06-26 03:09:53 DEBUG /home/breeze/exercise/web/src/epoll/Task/echo_task.cpp:59 echo task destroy
+2024-06-27 00:56:40 DEBUG /home/breeze/exercise/web/src/epoll/Socket/socket.cpp:12 create socket success!
+2024-06-27 00:56:40 DEBUG /home/breeze/exercise/web/src/epoll/Socket/socket.cpp:45 socket bind success: ip = 127.0.0.1, port = 8080
+2024-06-27 00:56:40 DEBUG /home/breeze/exercise/web/src/epoll/Socket/socket.cpp:56 socket listening ...
+2024-06-27 00:56:58 DEBUG /home/breeze/exercise/web/src/epoll/Socket/socket.cpp:86 socket accept success, connfd = 6
+2024-06-27 00:56:58 DEBUG /home/breeze/exercise/web/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 8bee55f0
+2024-06-27 01:10:29 DEBUG /home/breeze/exercise/web/src/epoll/Socket/socket.cpp:12 create socket success!
+2024-06-27 01:10:29 DEBUG /home/breeze/exercise/web/src/epoll/Socket/socket.cpp:45 socket bind success: ip = 127.0.0.1, port = 8080
+2024-06-27 01:10:29 DEBUG /home/breeze/exercise/web/src/epoll/Socket/socket.cpp:56 socket listening ...
+2024-06-27 01:10:33 DEBUG /home/breeze/exercise/web/src/epoll/Socket/socket.cpp:86 socket accept success, connfd = 6
+2024-06-27 01:10:33 DEBUG /home/breeze/exercise/web/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: f4ee55f0
+2024-06-27 01:27:25 DEBUG /home/breeze/exercise/web/src/thread/thread_pool.cpp:15 thread pool create worker threads: 16
+2024-06-27 01:27:25 DEBUG /home/breeze/exercise/web/src/epoll/Socket/socket.cpp:12 create socket success!
+2024-06-27 01:27:25 DEBUG /home/breeze/exercise/web/src/epoll/Socket/socket.cpp:45 socket bind success: ip = 127.0.0.1, port = 8080
+2024-06-27 01:27:25 DEBUG /home/breeze/exercise/web/src/epoll/Socket/socket.cpp:56 socket listening ...
+2024-06-27 01:27:27 DEBUG /home/breeze/exercise/web/src/epoll/Socket/socket.cpp:86 socket accept success, connfd = 6
+2024-06-27 01:27:27 DEBUG /home/breeze/exercise/web/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 7cd74b10
+2024-06-27 01:27:27 DEBUG /home/breeze/exercise/web/src/thread/worker_thread.cpp:25 worker thread run: thread=7cd72120, task=7cd74b10
+2024-06-27 01:27:27 DEBUG /home/breeze/exercise/web/src/epoll/SocketHandler/echo_task.cpp:17 echo task run
+2024-06-27 01:27:27 DEBUG /home/breeze/exercise/web/src/epoll/SocketHandler/echo_task.cpp:51 recv: conn = 6, msg = hello Server
+2024-06-27 01:27:27 DEBUG /home/breeze/exercise/web/src/epoll/SocketHandler/echo_task.cpp:60 echo task destroy
+2024-06-27 01:27:27 DEBUG /home/breeze/exercise/web/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 7cd74c10
+2024-06-27 01:27:27 DEBUG /home/breeze/exercise/web/src/thread/worker_thread.cpp:25 worker thread run: thread=7cd72310, task=7cd74c10
+2024-06-27 01:27:27 DEBUG /home/breeze/exercise/web/src/epoll/SocketHandler/echo_task.cpp:17 echo task run
+2024-06-27 01:27:27 DEBUG /home/breeze/exercise/web/src/epoll/SocketHandler/echo_task.cpp:45 socket closed by peer : conn = 6
+2024-06-27 01:27:27 DEBUG /home/breeze/exercise/web/src/epoll/SocketHandler/echo_task.cpp:60 echo task destroy

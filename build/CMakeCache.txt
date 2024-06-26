@@ -235,13 +235,13 @@ Task_IS_TOP_LEVEL:STATIC=OFF
 Task_SOURCE_DIR:STATIC=/home/breeze/exercise/web/src/epoll/Task
 
 //Value Computed by CMake
-Value_BINARY_DIR:STATIC=/home/breeze/exercise/web/build/src/utility
+ThreadPool_BINARY_DIR:STATIC=/home/breeze/exercise/web/build/src/thread
 
 //Value Computed by CMake
-Value_IS_TOP_LEVEL:STATIC=OFF
+ThreadPool_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-Value_SOURCE_DIR:STATIC=/home/breeze/exercise/web/src/utility
+ThreadPool_SOURCE_DIR:STATIC=/home/breeze/exercise/web/src/thread
 
 //Value Computed by CMake
 event_poller_BINARY_DIR:STATIC=/home/breeze/exercise/web/build/src/epoll/EventPoller

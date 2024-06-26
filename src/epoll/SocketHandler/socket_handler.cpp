@@ -1,8 +1,11 @@
 #include "socket_handler.h"
+#include "Singleton.h"
 #include "server_socket.h"
 #include "echo_task.h"
+#include "task_dispatcher.h"
 #include <unistd.h>
 
+using namespace breeze::thread;
 using namespace breeze::socket;
 using namespace breeze::task;
 
@@ -71,19 +74,19 @@ void SocketHandler::handle(int max_conn, int timeout)
                 }
                 else if (m_epoll.is_set(i, EPOLLIN))
                 {
-                    
-                    
                     detach(connfd);
 
-                    EchoTask task(connfd);
-                    if (! task.run())
-                    {
-                        ::close(connfd);               
-                    }
-                    else
-                    {
-                        attach(connfd);
-                    }
+                    // EchoTask task(connfd);
+                    // if (! task.run())
+                    // {
+                    //     ::close(connfd);               
+                    // }
+                    // else
+                    // {
+                    //     attach(connfd);
+                    // }
+                    auto task = new EchoTask(connfd);
+                    Singleton<TaskDispatcher>::Instance() -> assign(task);
                 }
 
                 

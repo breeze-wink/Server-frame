@@ -8,6 +8,10 @@
 /home/breeze/exercise/web/build/src/utility/CMakeFiles/test.dir
 /home/breeze/exercise/web/build/src/utility/CMakeFiles/edit_cache.dir
 /home/breeze/exercise/web/build/src/utility/CMakeFiles/rebuild_cache.dir
+/home/breeze/exercise/web/build/src/thread/CMakeFiles/ThreadPool.dir
+/home/breeze/exercise/web/build/src/thread/CMakeFiles/test.dir
+/home/breeze/exercise/web/build/src/thread/CMakeFiles/edit_cache.dir
+/home/breeze/exercise/web/build/src/thread/CMakeFiles/rebuild_cache.dir
 /home/breeze/exercise/web/build/src/epoll/CMakeFiles/Client.dir
 /home/breeze/exercise/web/build/src/epoll/CMakeFiles/Server.dir
 /home/breeze/exercise/web/build/src/epoll/CMakeFiles/test.dir
@@ -17,10 +21,6 @@
 /home/breeze/exercise/web/build/src/epoll/Socket/CMakeFiles/test.dir
 /home/breeze/exercise/web/build/src/epoll/Socket/CMakeFiles/edit_cache.dir
 /home/breeze/exercise/web/build/src/epoll/Socket/CMakeFiles/rebuild_cache.dir
-/home/breeze/exercise/web/build/src/epoll/Task/CMakeFiles/Task.dir
-/home/breeze/exercise/web/build/src/epoll/Task/CMakeFiles/test.dir
-/home/breeze/exercise/web/build/src/epoll/Task/CMakeFiles/edit_cache.dir
-/home/breeze/exercise/web/build/src/epoll/Task/CMakeFiles/rebuild_cache.dir
 /home/breeze/exercise/web/build/src/epoll/SocketHandler/CMakeFiles/socketHandler.dir
 /home/breeze/exercise/web/build/src/epoll/SocketHandler/CMakeFiles/test.dir
 /home/breeze/exercise/web/build/src/epoll/SocketHandler/CMakeFiles/edit_cache.dir
