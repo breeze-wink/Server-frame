@@ -226,15 +226,6 @@ Epoll_IS_TOP_LEVEL:STATIC=OFF
 Epoll_SOURCE_DIR:STATIC=/home/breeze/exercise/web/src/epoll
 
 //Value Computed by CMake
-Task_BINARY_DIR:STATIC=/home/breeze/exercise/web/build/src/epoll/Task
-
-//Value Computed by CMake
-Task_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-Task_SOURCE_DIR:STATIC=/home/breeze/exercise/web/src/epoll/Task
-
-//Value Computed by CMake
 ThreadPool_BINARY_DIR:STATIC=/home/breeze/exercise/web/build/src/thread
 
 //Value Computed by CMake
@@ -253,13 +244,22 @@ event_poller_IS_TOP_LEVEL:STATIC=OFF
 event_poller_SOURCE_DIR:STATIC=/home/breeze/exercise/web/src/epoll/EventPoller
 
 //Value Computed by CMake
-socketHandler_BINARY_DIR:STATIC=/home/breeze/exercise/web/build/src/epoll/SocketHandler
+frame_BINARY_DIR:STATIC=/home/breeze/exercise/web/build/src/frame
+
+//Value Computed by CMake
+frame_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+frame_SOURCE_DIR:STATIC=/home/breeze/exercise/web/src/frame
+
+//Value Computed by CMake
+socketHandler_BINARY_DIR:STATIC=/home/breeze/exercise/web/build/src/socketHandler
 
 //Value Computed by CMake
 socketHandler_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-socketHandler_SOURCE_DIR:STATIC=/home/breeze/exercise/web/src/epoll/SocketHandler
+socketHandler_SOURCE_DIR:STATIC=/home/breeze/exercise/web/src/socketHandler
 
 //Value Computed by CMake
 socket_BINARY_DIR:STATIC=/home/breeze/exercise/web/build/src/epoll/Socket
@@ -389,7 +389,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -6,4 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("utility")
 subdirs("thread")
-subdirs("epoll")
+subdirs("socketHandler")
+subdirs("frame")

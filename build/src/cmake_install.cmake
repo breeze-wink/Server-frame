@@ -54,6 +54,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/breeze/exercise/web/build/src/epoll/cmake_install.cmake")
+  include("/home/breeze/exercise/web/build/src/socketHandler/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/breeze/exercise/web/build/src/frame/cmake_install.cmake")
 endif()
 
