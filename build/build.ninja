@@ -550,6 +550,121 @@ build src/frame/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build src/frame/rebuild_cache: phony src/frame/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/breeze/exercise/web/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build src/engine/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/engine && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build src/engine/test: phony src/engine/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/engine/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/engine && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/engine/edit_cache: phony src/engine/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/engine/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/engine && /usr/bin/cmake --regenerate-during-build -S/home/breeze/exercise/web -B/home/breeze/exercise/web/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/engine/rebuild_cache: phony src/engine/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/breeze/exercise/web/src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target echo_plugin
+
+
+#############################################
+# Order-only phony target for echo_plugin
+
+build cmake_object_order_depends_target_echo_plugin: phony || src/plugin/CMakeFiles/echo_plugin.dir
+
+build src/plugin/CMakeFiles/echo_plugin.dir/echo_plugin.cpp.o: CXX_COMPILER__echo_plugin_Debug /home/breeze/exercise/web/src/plugin/echo_plugin.cpp || cmake_object_order_depends_target_echo_plugin
+  DEFINES = -Decho_plugin_EXPORTS
+  DEP_FILE = src/plugin/CMakeFiles/echo_plugin.dir/echo_plugin.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++17
+  INCLUDES = -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/utility
+  OBJECT_DIR = src/plugin/CMakeFiles/echo_plugin.dir
+  OBJECT_FILE_DIR = src/plugin/CMakeFiles/echo_plugin.dir
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target echo_plugin
+
+
+#############################################
+# Link the shared library ../src/plugin/libecho_plugin.so
+
+build ../src/plugin/libecho_plugin.so: CXX_SHARED_LIBRARY_LINKER__echo_plugin_Debug src/plugin/CMakeFiles/echo_plugin.dir/echo_plugin.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = src/plugin/CMakeFiles/echo_plugin.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  SONAME = libecho_plugin.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = ../src/plugin/libecho_plugin.so
+  TARGET_PDB = echo_plugin.so.dbg
+
+
+#############################################
+# Utility command for test
+
+build src/plugin/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/plugin && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build src/plugin/test: phony src/plugin/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/plugin/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/plugin && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/plugin/edit_cache: phony src/plugin/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/plugin/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/plugin && /usr/bin/cmake --regenerate-during-build -S/home/breeze/exercise/web -B/home/breeze/exercise/web/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/plugin/rebuild_cache: phony src/plugin/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build Client: phony ../bin/Client
@@ -558,9 +673,13 @@ build Server: phony ../bin/Server
 
 build ThreadPool: phony ../lib/libThreadPool.a
 
+build echo_plugin: phony ../src/plugin/libecho_plugin.so
+
 build frame: phony ../lib/libframe.a
 
 build libThreadPool.a: phony ../lib/libThreadPool.a
+
+build libecho_plugin.so: phony ../src/plugin/libecho_plugin.so
 
 build libframe.a: phony ../lib/libframe.a
 
@@ -587,7 +706,14 @@ build all: phony src/all
 #############################################
 # Folder: /home/breeze/exercise/web/build/src
 
-build src/all: phony ../bin/Server ../bin/Client src/utility/all src/thread/all src/socketHandler/all src/frame/all
+build src/all: phony ../bin/Server ../bin/Client src/utility/all src/thread/all src/socketHandler/all src/frame/all src/engine/all src/plugin/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/breeze/exercise/web/build/src/engine
+
+build src/engine/all: phony
 
 # =============================================================================
 
@@ -595,6 +721,13 @@ build src/all: phony ../bin/Server ../bin/Client src/utility/all src/thread/all 
 # Folder: /home/breeze/exercise/web/build/src/frame
 
 build src/frame/all: phony ../lib/libframe.a
+
+# =============================================================================
+
+#############################################
+# Folder: /home/breeze/exercise/web/build/src/plugin
+
+build src/plugin/all: phony ../src/plugin/libecho_plugin.so
 
 # =============================================================================
 
@@ -624,14 +757,14 @@ build src/utility/all: phony ../lib/libutility.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../src/CMakeLists.txt ../src/frame/CMakeLists.txt ../src/socketHandler/CMakeLists.txt ../src/thread/CMakeLists.txt ../src/utility/CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../src/CMakeLists.txt ../src/engine/CMakeLists.txt ../src/frame/CMakeLists.txt ../src/plugin/CMakeLists.txt ../src/socketHandler/CMakeLists.txt ../src/thread/CMakeLists.txt ../src/utility/CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../src/CMakeLists.txt ../src/frame/CMakeLists.txt ../src/socketHandler/CMakeLists.txt ../src/thread/CMakeLists.txt ../src/utility/CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../src/CMakeLists.txt ../src/engine/CMakeLists.txt ../src/frame/CMakeLists.txt ../src/plugin/CMakeLists.txt ../src/socketHandler/CMakeLists.txt ../src/thread/CMakeLists.txt ../src/utility/CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
 
 
 #############################################

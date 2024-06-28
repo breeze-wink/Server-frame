@@ -22,3 +22,10 @@
 /home/breeze/exercise/web/build/src/frame/CMakeFiles/test.dir
 /home/breeze/exercise/web/build/src/frame/CMakeFiles/edit_cache.dir
 /home/breeze/exercise/web/build/src/frame/CMakeFiles/rebuild_cache.dir
+/home/breeze/exercise/web/build/src/engine/CMakeFiles/test.dir
+/home/breeze/exercise/web/build/src/engine/CMakeFiles/edit_cache.dir
+/home/breeze/exercise/web/build/src/engine/CMakeFiles/rebuild_cache.dir
+/home/breeze/exercise/web/build/src/plugin/CMakeFiles/echo_plugin.dir
+/home/breeze/exercise/web/build/src/plugin/CMakeFiles/test.dir
+/home/breeze/exercise/web/build/src/plugin/CMakeFiles/edit_cache.dir
+/home/breeze/exercise/web/build/src/plugin/CMakeFiles/rebuild_cache.dir

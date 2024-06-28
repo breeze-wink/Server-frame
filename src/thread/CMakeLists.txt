@@ -4,4 +4,4 @@ project(ThreadPool
 
 aux_source_directory(. DIR_SRC)
 add_library(${PROJECT_NAME} STATIC ${DIR_SRC})
-target_include_directories(${PROJECT_NAME} PUBLIC ${utility_dir})
+target_include_directories(${PROJECT_NAME} PUBLIC ${utility_Dir})

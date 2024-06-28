@@ -88,5 +88,10 @@
   "directory": "/home/breeze/exercise/web/build",
   "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/socketHandler -I/home/breeze/exercise/web/src/thread -g -std=gnu++17 -o src/frame/CMakeFiles/frame.dir/server.cpp.o -c /home/breeze/exercise/web/src/frame/server.cpp",
   "file": "/home/breeze/exercise/web/src/frame/server.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -Decho_plugin_EXPORTS -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/utility -g -fPIC -std=gnu++17 -o src/plugin/CMakeFiles/echo_plugin.dir/echo_plugin.cpp.o -c /home/breeze/exercise/web/src/plugin/echo_plugin.cpp",
+  "file": "/home/breeze/exercise/web/src/plugin/echo_plugin.cpp"
 }
 ]
