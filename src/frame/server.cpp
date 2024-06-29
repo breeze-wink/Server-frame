@@ -2,11 +2,13 @@
 #include "system.h"
 #include "iniFile.h"
 #include "Logger.h"
+#include "workflow.h"
 #include "task_dispatcher.h"
 #include "socket_handler.h"
 
 using namespace breeze::frame;
 using namespace breeze::socket;
+using namespace breeze::engine;
 using namespace breeze::thread;
 
 void Server::start()
@@ -32,6 +34,9 @@ void Server::start()
     logger -> open(server_log_path);
     logger -> setConsole(false);
     logger -> setLevel(static_cast<Logger::Level>(m_log_level));
+
+    auto workflow = Singleton<Workflow>::Instance();
+    workflow -> load(root_path + "/config/workflow.xml");
 
     auto dispatcher = Singleton<TaskDispatcher>::Instance();
     dispatcher -> init(m_threads);

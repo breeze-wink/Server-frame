@@ -28,7 +28,7 @@ bool EchoPlugin::run(Context& ctx)
     log_info("echo plugin running!");
     log_info("context input: %s", input.c_str());
 
-    ctx.set("output", "echo_plugin output");
+    ctx.set("output", "echo_plugin run: " + input);
     return true;
 }
 

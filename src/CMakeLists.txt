@@ -5,14 +5,17 @@ set(frame_Dir ${CMAKE_CURRENT_SOURCE_DIR}/frame)
 set(engine_Dir ${CMAKE_CURRENT_SOURCE_DIR}/engine)
 set(plugin_Dir ${CMAKE_CURRENT_SOURCE_DIR}/plugin)
 set(xml_Dir ${CMAKE_CURRENT_SOURCE_DIR}/xml)
+set(task_Dir ${CMAKE_CURRENT_SOURCE_DIR}/Task)
+
 
 add_subdirectory(${utility_Dir})
 add_subdirectory(${ThreadPool_Dir})
-add_subdirectory(${socketHandler_Dir})
 add_subdirectory(${frame_Dir})
 add_subdirectory(${plugin_Dir})
 add_subdirectory(${xml_Dir})
 add_subdirectory(${engine_Dir})
+add_subdirectory(${task_Dir})
+add_subdirectory(${socketHandler_Dir})
 
 add_executable(Server server.cpp)
 add_executable(Client client.cpp)

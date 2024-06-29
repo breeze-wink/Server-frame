@@ -6,8 +6,9 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("utility")
 subdirs("thread")
-subdirs("socketHandler")
 subdirs("frame")
 subdirs("plugin")
 subdirs("xml")
 subdirs("engine")
+subdirs("Task")
+subdirs("socketHandler")

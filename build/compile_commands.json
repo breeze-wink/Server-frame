@@ -1,12 +1,12 @@
 [
 {
   "directory": "/home/breeze/exercise/web/build",
-  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/frame -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/socketHandler -I/home/breeze/exercise/web/src/thread -g -std=gnu++17 -o src/CMakeFiles/Server.dir/server.cpp.o -c /home/breeze/exercise/web/src/server.cpp",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/frame -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/socketHandler -I/home/breeze/exercise/web/src/thread -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/xml -I/home/breeze/exercise/web/src/Task -g -std=gnu++17 -o src/CMakeFiles/Server.dir/server.cpp.o -c /home/breeze/exercise/web/src/server.cpp",
   "file": "/home/breeze/exercise/web/src/server.cpp"
 },
 {
   "directory": "/home/breeze/exercise/web/build",
-  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/socketHandler -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread -g -std=gnu++17 -o src/CMakeFiles/Client.dir/client.cpp.o -c /home/breeze/exercise/web/src/client.cpp",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/socketHandler -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/xml -I/home/breeze/exercise/web/src/Task -g -std=gnu++17 -o src/CMakeFiles/Client.dir/client.cpp.o -c /home/breeze/exercise/web/src/client.cpp",
   "file": "/home/breeze/exercise/web/src/client.cpp"
 },
 {
@@ -56,37 +56,7 @@
 },
 {
   "directory": "/home/breeze/exercise/web/build",
-  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread -g -std=gnu++17 -o src/socketHandler/CMakeFiles/socketHandler.dir/client_socket.cpp.o -c /home/breeze/exercise/web/src/socketHandler/client_socket.cpp",
-  "file": "/home/breeze/exercise/web/src/socketHandler/client_socket.cpp"
-},
-{
-  "directory": "/home/breeze/exercise/web/build",
-  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread -g -std=gnu++17 -o src/socketHandler/CMakeFiles/socketHandler.dir/echo_task.cpp.o -c /home/breeze/exercise/web/src/socketHandler/echo_task.cpp",
-  "file": "/home/breeze/exercise/web/src/socketHandler/echo_task.cpp"
-},
-{
-  "directory": "/home/breeze/exercise/web/build",
-  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread -g -std=gnu++17 -o src/socketHandler/CMakeFiles/socketHandler.dir/event_poller.cpp.o -c /home/breeze/exercise/web/src/socketHandler/event_poller.cpp",
-  "file": "/home/breeze/exercise/web/src/socketHandler/event_poller.cpp"
-},
-{
-  "directory": "/home/breeze/exercise/web/build",
-  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread -g -std=gnu++17 -o src/socketHandler/CMakeFiles/socketHandler.dir/server_socket.cpp.o -c /home/breeze/exercise/web/src/socketHandler/server_socket.cpp",
-  "file": "/home/breeze/exercise/web/src/socketHandler/server_socket.cpp"
-},
-{
-  "directory": "/home/breeze/exercise/web/build",
-  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread -g -std=gnu++17 -o src/socketHandler/CMakeFiles/socketHandler.dir/socket.cpp.o -c /home/breeze/exercise/web/src/socketHandler/socket.cpp",
-  "file": "/home/breeze/exercise/web/src/socketHandler/socket.cpp"
-},
-{
-  "directory": "/home/breeze/exercise/web/build",
-  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread -g -std=gnu++17 -o src/socketHandler/CMakeFiles/socketHandler.dir/socket_handler.cpp.o -c /home/breeze/exercise/web/src/socketHandler/socket_handler.cpp",
-  "file": "/home/breeze/exercise/web/src/socketHandler/socket_handler.cpp"
-},
-{
-  "directory": "/home/breeze/exercise/web/build",
-  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/socketHandler -I/home/breeze/exercise/web/src/thread -g -std=gnu++17 -o src/frame/CMakeFiles/frame.dir/server.cpp.o -c /home/breeze/exercise/web/src/frame/server.cpp",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/socketHandler -I/home/breeze/exercise/web/src/thread -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/xml -I/home/breeze/exercise/web/src/Task -g -std=gnu++17 -o src/frame/CMakeFiles/frame.dir/server.cpp.o -c /home/breeze/exercise/web/src/frame/server.cpp",
   "file": "/home/breeze/exercise/web/src/frame/server.cpp"
 },
 {
@@ -128,6 +98,31 @@
   "directory": "/home/breeze/exercise/web/build",
   "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/xml -I/home/breeze/exercise/web/src/utility -g -std=gnu++17 -o src/engine/CMakeFiles/engine.dir/workflow.cpp.o -c /home/breeze/exercise/web/src/engine/workflow.cpp",
   "file": "/home/breeze/exercise/web/src/engine/workflow.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/socketHandler -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread -I/home/breeze/exercise/web/src/xml -g -std=gnu++17 -o src/Task/CMakeFiles/task.dir/echo_task.cpp.o -c /home/breeze/exercise/web/src/Task/echo_task.cpp",
+  "file": "/home/breeze/exercise/web/src/Task/echo_task.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/socketHandler -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread -I/home/breeze/exercise/web/src/xml -g -std=gnu++17 -o src/Task/CMakeFiles/task.dir/work_task.cpp.o -c /home/breeze/exercise/web/src/Task/work_task.cpp",
+  "file": "/home/breeze/exercise/web/src/Task/work_task.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/thread -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/xml -I/home/breeze/exercise/web/src/Task -I/home/breeze/exercise/web/src/socketHandler -I/home/breeze/exercise/web/src/utility -g -std=gnu++17 -o src/socketHandler/CMakeFiles/socketHandler.dir/event_poller.cpp.o -c /home/breeze/exercise/web/src/socketHandler/event_poller.cpp",
+  "file": "/home/breeze/exercise/web/src/socketHandler/event_poller.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/thread -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/xml -I/home/breeze/exercise/web/src/Task -I/home/breeze/exercise/web/src/socketHandler -I/home/breeze/exercise/web/src/utility -g -std=gnu++17 -o src/socketHandler/CMakeFiles/socketHandler.dir/socket.cpp.o -c /home/breeze/exercise/web/src/socketHandler/socket.cpp",
+  "file": "/home/breeze/exercise/web/src/socketHandler/socket.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/thread -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/xml -I/home/breeze/exercise/web/src/Task -I/home/breeze/exercise/web/src/socketHandler -I/home/breeze/exercise/web/src/utility -g -std=gnu++17 -o src/socketHandler/CMakeFiles/socketHandler.dir/socket_handler.cpp.o -c /home/breeze/exercise/web/src/socketHandler/socket_handler.cpp",
+  "file": "/home/breeze/exercise/web/src/socketHandler/socket_handler.cpp"
 },
 {
   "directory": "/home/breeze/exercise/web/build",

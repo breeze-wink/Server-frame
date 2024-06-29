@@ -1,20 +1,21 @@
-#include "echo_task.h"
+#include "work_task.h"
+#include "Logger.h"
 #include "socket.h"
+#include "workflow.h"
 #include "socket_handler.h"
-#include <unistd.h>
-using namespace breeze::socket;
+
 using namespace breeze::task;
+using namespace breeze::utility;
+using namespace breeze::socket;
+using namespace breeze::engine;
 
-EchoTask::EchoTask(int sockfd) : m_sockfd(sockfd)
+WorkTask::WorkTask(int sockfd) : Task(), m_sockfd(sockfd)
 {
+}
 
-}
-EchoTask::~EchoTask()
+void WorkTask::run()
 {
-}
-void EchoTask::run()
-{
-    log_debug("echo task run");
+    log_debug("work task run");
 
     char buf[1024] = {0};
     Socket socket(m_sockfd);
@@ -22,7 +23,7 @@ void EchoTask::run()
     
     if (len < 0)
     {
-        if (errno == EAGAIN || errno == EWOULDBLOCK) //阻塞模式下，客⼾端异常退出处理, 非阻塞下，recv读空，send写满缓冲区会触发
+        if (errno == EAGAIN || errno == EWOULDBLOCK) //阻塞模式下，客户端异常退出处理, 非阻塞下，recv读空，send写满缓冲区会触发
         {
             log_debug("socket recv/send would block: conn = %d", m_sockfd);
             return; //注意，这是正常的
@@ -50,14 +51,21 @@ void EchoTask::run()
     {
         log_debug("recv: conn = %d, msg = %s", m_sockfd, buf);
 
+        auto workflow = Singleton<Workflow>::Instance();
+
+        string output;
+
+        workflow -> run(1, buf, output);
+
         //发送回去
-        socket.send(buf, sizeof(buf));
+        socket.send(output.c_str(), output.size());
+
     }
 }
 
-void EchoTask::destroy()
+void WorkTask::destroy()
 {
-    log_debug("echo task destroy");
+    log_debug("work task destroy");
     if (m_closed)
     {
         close(m_sockfd);

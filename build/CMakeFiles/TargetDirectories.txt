@@ -14,10 +14,6 @@
 /home/breeze/exercise/web/build/src/thread/CMakeFiles/test.dir
 /home/breeze/exercise/web/build/src/thread/CMakeFiles/edit_cache.dir
 /home/breeze/exercise/web/build/src/thread/CMakeFiles/rebuild_cache.dir
-/home/breeze/exercise/web/build/src/socketHandler/CMakeFiles/socketHandler.dir
-/home/breeze/exercise/web/build/src/socketHandler/CMakeFiles/test.dir
-/home/breeze/exercise/web/build/src/socketHandler/CMakeFiles/edit_cache.dir
-/home/breeze/exercise/web/build/src/socketHandler/CMakeFiles/rebuild_cache.dir
 /home/breeze/exercise/web/build/src/frame/CMakeFiles/frame.dir
 /home/breeze/exercise/web/build/src/frame/CMakeFiles/test.dir
 /home/breeze/exercise/web/build/src/frame/CMakeFiles/edit_cache.dir
@@ -34,6 +30,14 @@
 /home/breeze/exercise/web/build/src/engine/CMakeFiles/test.dir
 /home/breeze/exercise/web/build/src/engine/CMakeFiles/edit_cache.dir
 /home/breeze/exercise/web/build/src/engine/CMakeFiles/rebuild_cache.dir
+/home/breeze/exercise/web/build/src/Task/CMakeFiles/task.dir
+/home/breeze/exercise/web/build/src/Task/CMakeFiles/test.dir
+/home/breeze/exercise/web/build/src/Task/CMakeFiles/edit_cache.dir
+/home/breeze/exercise/web/build/src/Task/CMakeFiles/rebuild_cache.dir
+/home/breeze/exercise/web/build/src/socketHandler/CMakeFiles/socketHandler.dir
+/home/breeze/exercise/web/build/src/socketHandler/CMakeFiles/test.dir
+/home/breeze/exercise/web/build/src/socketHandler/CMakeFiles/edit_cache.dir
+/home/breeze/exercise/web/build/src/socketHandler/CMakeFiles/rebuild_cache.dir
 /home/breeze/exercise/web/build/test/CMakeFiles/test.dir
 /home/breeze/exercise/web/build/test/CMakeFiles/edit_cache.dir
 /home/breeze/exercise/web/build/test/CMakeFiles/rebuild_cache.dir

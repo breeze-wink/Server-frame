@@ -98,25 +98,6 @@ rule CXX_STATIC_LIBRARY_LINKER__ThreadPool_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__socketHandler_Debug
-  depfile = $DEP_FILE
-  deps = gcc
-  command = /usr/bin/clang++-15 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for linking CXX static library.
-
-rule CXX_STATIC_LIBRARY_LINKER__socketHandler_Debug
-  command = $PRE_LINK && /usr/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/llvm-ar-15 qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/llvm-ranlib-15 $TARGET_FILE && $POST_BUILD
-  description = Linking CXX static library $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling CXX files.
-
 rule CXX_COMPILER__frame_Debug
   depfile = $DEP_FILE
   deps = gcc
@@ -185,6 +166,44 @@ rule CXX_COMPILER__engine_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__engine_Debug
+  command = $PRE_LINK && /usr/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/llvm-ar-15 qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/llvm-ranlib-15 $TARGET_FILE && $POST_BUILD
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__task_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/bin/clang++-15 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__task_Debug
+  command = $PRE_LINK && /usr/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/llvm-ar-15 qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/llvm-ranlib-15 $TARGET_FILE && $POST_BUILD
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__socketHandler_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/bin/clang++-15 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__socketHandler_Debug
   command = $PRE_LINK && /usr/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/llvm-ar-15 qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/llvm-ranlib-15 $TARGET_FILE && $POST_BUILD
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
