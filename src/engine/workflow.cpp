@@ -3,7 +3,6 @@
 #include "Singleton.h"
 #include "plugin_helper.h"
 #include "context.h"
-#include "system.h"
 #include "work.h"
 // #include <memory>
 
@@ -12,10 +11,6 @@ using namespace breeze::xml;
 
 bool Workflow::load(const string& config)
 {
-    auto sys = Singleton<System>::Instance();
-    string log_path = sys -> get_root_path() + "/log/workflow.log";
-
-    Singleton<Logger>::Instance() -> open(log_path);
 
     Xml root;
     root.load(config);

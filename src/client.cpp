@@ -1,8 +1,11 @@
 #include "socket.h"
 #include "system.h"
+#include "work_task.h"
+#include <cstdint>
 #include <cstdio>
+#include <cstring>
 using namespace breeze::socket;
-
+using namespace breeze::task;
 int main()
 {
     auto sys = Singleton<System>::Instance();
@@ -13,7 +16,13 @@ int main()
 
     Client_socket client("127.0.0.1", 8080);
     
-    char data[] = "hello Server";
+    string msg = "hello Server";
+    MsgHead msg_head = {1, static_cast<uint16_t>(msg.size())};
+
+    char data[30] = {0};
+    memcpy(data, &msg_head, sizeof(msg_head));
+    memcpy(data + sizeof(msg_head), msg.c_str(), msg.size());
+
     client.send(data, sizeof(data));
 
     char buffer[1024] = {0};

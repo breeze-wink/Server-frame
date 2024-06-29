@@ -16,10 +16,13 @@ WorkTask::WorkTask(int sockfd) : Task(), m_sockfd(sockfd)
 void WorkTask::run()
 {
     log_debug("work task run");
+    //接收客户端数据
+    MsgHead head;
+    memset(&head, 0, sizeof(head));
 
-    char buf[1024] = {0};
     Socket socket(m_sockfd);
-    int len = socket.recv(buf, sizeof(buf));
+
+    int len = socket.recv((char*) &head, sizeof(head));
     
     if (len < 0)
     {
@@ -45,22 +48,48 @@ void WorkTask::run()
     {
         log_debug("socket closed by peer : conn = %d", m_sockfd);
         m_closed = true;
-
+        return;
     }
-    else if (len > 0)
+   
+    if (len != sizeof(head))
     {
-        log_debug("recv: conn = %d, msg = %s", m_sockfd, buf);
-
-        auto workflow = Singleton<Workflow>::Instance();
-
-        string output;
-
-        workflow -> run(1, buf, output);
-
-        //发送回去
-        socket.send(output.c_str(), output.size());
-
+        log_error("msg head length incorrect: %d", len);
+        m_closed = true;
+        return;
     }
+
+    log_debug("msg head: cmd = %d, len = %d", head.cmd, head.len);
+
+    if (head.len > recv_buf_size)
+    {
+        log_error("msg body_len too large: len = %d", head.len);
+        m_closed = true;
+        return;
+    }
+
+    char buf[recv_buf_size] = {0};
+
+    len = socket.recv(buf, head.len);
+
+    if (len != head.len)
+    {
+        log_error("msg recv error");
+        m_closed = true;
+        return;
+    }
+
+    log_debug("msg body: len = %d, data = %s", len, buf);
+
+    auto workflow = Singleton<Workflow>::Instance();
+
+    string output;
+
+    workflow -> run(static_cast<int>(head.cmd), buf, output);
+
+    //发送回去
+    socket.send(output.c_str(), output.size());
+
+
 }
 
 void WorkTask::destroy()

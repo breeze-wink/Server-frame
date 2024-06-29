@@ -1,9 +1,18 @@
 #pragma once
 #include "task.h"
+#include <cstdint>
 using namespace breeze::thread;
 
 namespace breeze::task
 {
+    struct MsgHead
+    {
+        uint16_t cmd;
+        uint16_t len;
+    }; 
+
+    const uint16_t recv_buf_size = 1024;
+
     class WorkTask : public Task
     {
     public:
