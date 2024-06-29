@@ -12,7 +12,8 @@ EchoPlugin::EchoPlugin()
     auto sys = Singleton<System>::Instance();
     const string root_path = sys -> get_root_path();
     auto logger = Singleton<Logger>::Instance();
-    logger -> open(root_path + "log/echo_plugin.log");
+    string log_path = root_path + "log/echo_plugin.log";
+    logger -> open(log_path);
     logger -> setConsole(false);
 }
 EchoPlugin::~EchoPlugin()
@@ -20,9 +21,14 @@ EchoPlugin::~EchoPlugin()
 
 }
 
-bool EchoPlugin::run()
+bool EchoPlugin::run(Context& ctx)
 {
+    string input = ctx.get<string>("input");
+
     log_info("echo plugin running!");
+    log_info("context input: %s", input.c_str());
+
+    ctx.set("output", "echo_plugin output");
     return true;
 }
 

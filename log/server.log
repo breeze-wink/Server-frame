@@ -2,3 +2,7 @@
 2024-06-27 14:56:10 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:12 create socket success!
 2024-06-27 14:56:10 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:45 socket bind success: ip = 127.0.0.1, port = 8080
 2024-06-27 14:56:10 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:56 socket listening ...
+2024-06-29 03:17:17 DEBUG /home/breeze/exercise/web/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-06-29 03:17:17 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:12 create socket success!
+2024-06-29 03:17:17 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:45 socket bind success: ip = 127.0.0.1, port = 8080
+2024-06-29 03:17:17 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:56 socket listening ...

@@ -95,6 +95,8 @@ build src/CMakeFiles/Server.dir/server.cpp.o: CXX_COMPILER__Server_Debug /home/b
   INCLUDES = -I/home/breeze/exercise/web/src/frame -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/socketHandler -I/home/breeze/exercise/web/src/thread
   OBJECT_DIR = src/CMakeFiles/Server.dir
   OBJECT_FILE_DIR = src/CMakeFiles/Server.dir
+  TARGET_COMPILE_PDB = src/CMakeFiles/Server.dir/
+  TARGET_PDB = ../bin/Server.pdb
 
 
 # =============================================================================
@@ -110,8 +112,9 @@ build ../bin/Server: CXX_EXECUTABLE_LINKER__Server_Debug src/CMakeFiles/Server.d
   OBJECT_DIR = src/CMakeFiles/Server.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = src/CMakeFiles/Server.dir/
   TARGET_FILE = ../bin/Server
-  TARGET_PDB = Server.dbg
+  TARGET_PDB = ../bin/Server.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target Client
@@ -128,6 +131,8 @@ build src/CMakeFiles/Client.dir/client.cpp.o: CXX_COMPILER__Client_Debug /home/b
   INCLUDES = -I/home/breeze/exercise/web/src/socketHandler -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread
   OBJECT_DIR = src/CMakeFiles/Client.dir
   OBJECT_FILE_DIR = src/CMakeFiles/Client.dir
+  TARGET_COMPILE_PDB = src/CMakeFiles/Client.dir/
+  TARGET_PDB = ../bin/Client.pdb
 
 
 # =============================================================================
@@ -143,8 +148,9 @@ build ../bin/Client: CXX_EXECUTABLE_LINKER__Client_Debug src/CMakeFiles/Client.d
   OBJECT_DIR = src/CMakeFiles/Client.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = src/CMakeFiles/Client.dir/
   TARGET_FILE = ../bin/Client
-  TARGET_PDB = Client.dbg
+  TARGET_PDB = ../bin/Client.pdb
 
 
 #############################################
@@ -197,27 +203,35 @@ build cmake_object_order_depends_target_utility: phony || src/utility/CMakeFiles
 
 build src/utility/CMakeFiles/utility.dir/Logger.cpp.o: CXX_COMPILER__utility_Debug /home/breeze/exercise/web/src/utility/Logger.cpp || cmake_object_order_depends_target_utility
   DEP_FILE = src/utility/CMakeFiles/utility.dir/Logger.cpp.o.d
-  FLAGS = -g -std=gnu++17
+  FLAGS = -g -fPIC -std=gnu++17
   OBJECT_DIR = src/utility/CMakeFiles/utility.dir
   OBJECT_FILE_DIR = src/utility/CMakeFiles/utility.dir
+  TARGET_COMPILE_PDB = src/utility/CMakeFiles/utility.dir/utility.pdb
+  TARGET_PDB = ../lib/libutility.pdb
 
 build src/utility/CMakeFiles/utility.dir/Value.cpp.o: CXX_COMPILER__utility_Debug /home/breeze/exercise/web/src/utility/Value.cpp || cmake_object_order_depends_target_utility
   DEP_FILE = src/utility/CMakeFiles/utility.dir/Value.cpp.o.d
-  FLAGS = -g -std=gnu++17
+  FLAGS = -g -fPIC -std=gnu++17
   OBJECT_DIR = src/utility/CMakeFiles/utility.dir
   OBJECT_FILE_DIR = src/utility/CMakeFiles/utility.dir
+  TARGET_COMPILE_PDB = src/utility/CMakeFiles/utility.dir/utility.pdb
+  TARGET_PDB = ../lib/libutility.pdb
 
 build src/utility/CMakeFiles/utility.dir/iniFile.cpp.o: CXX_COMPILER__utility_Debug /home/breeze/exercise/web/src/utility/iniFile.cpp || cmake_object_order_depends_target_utility
   DEP_FILE = src/utility/CMakeFiles/utility.dir/iniFile.cpp.o.d
-  FLAGS = -g -std=gnu++17
+  FLAGS = -g -fPIC -std=gnu++17
   OBJECT_DIR = src/utility/CMakeFiles/utility.dir
   OBJECT_FILE_DIR = src/utility/CMakeFiles/utility.dir
+  TARGET_COMPILE_PDB = src/utility/CMakeFiles/utility.dir/utility.pdb
+  TARGET_PDB = ../lib/libutility.pdb
 
 build src/utility/CMakeFiles/utility.dir/system.cpp.o: CXX_COMPILER__utility_Debug /home/breeze/exercise/web/src/utility/system.cpp || cmake_object_order_depends_target_utility
   DEP_FILE = src/utility/CMakeFiles/utility.dir/system.cpp.o.d
-  FLAGS = -g -std=gnu++17
+  FLAGS = -g -fPIC -std=gnu++17
   OBJECT_DIR = src/utility/CMakeFiles/utility.dir
   OBJECT_FILE_DIR = src/utility/CMakeFiles/utility.dir
+  TARGET_COMPILE_PDB = src/utility/CMakeFiles/utility.dir/utility.pdb
+  TARGET_PDB = ../lib/libutility.pdb
 
 
 # =============================================================================
@@ -232,8 +246,9 @@ build ../lib/libutility.a: CXX_STATIC_LIBRARY_LINKER__utility_Debug src/utility/
   OBJECT_DIR = src/utility/CMakeFiles/utility.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = src/utility/CMakeFiles/utility.dir/utility.pdb
   TARGET_FILE = ../lib/libutility.a
-  TARGET_PDB = utility.a.dbg
+  TARGET_PDB = ../lib/libutility.pdb
 
 
 #############################################
@@ -290,6 +305,8 @@ build src/thread/CMakeFiles/ThreadPool.dir/task.cpp.o: CXX_COMPILER__ThreadPool_
   INCLUDES = -I/home/breeze/exercise/web/src/utility
   OBJECT_DIR = src/thread/CMakeFiles/ThreadPool.dir
   OBJECT_FILE_DIR = src/thread/CMakeFiles/ThreadPool.dir
+  TARGET_COMPILE_PDB = src/thread/CMakeFiles/ThreadPool.dir/ThreadPool.pdb
+  TARGET_PDB = ../lib/libThreadPool.pdb
 
 build src/thread/CMakeFiles/ThreadPool.dir/task_dispatcher.cpp.o: CXX_COMPILER__ThreadPool_Debug /home/breeze/exercise/web/src/thread/task_dispatcher.cpp || cmake_object_order_depends_target_ThreadPool
   DEP_FILE = src/thread/CMakeFiles/ThreadPool.dir/task_dispatcher.cpp.o.d
@@ -297,6 +314,8 @@ build src/thread/CMakeFiles/ThreadPool.dir/task_dispatcher.cpp.o: CXX_COMPILER__
   INCLUDES = -I/home/breeze/exercise/web/src/utility
   OBJECT_DIR = src/thread/CMakeFiles/ThreadPool.dir
   OBJECT_FILE_DIR = src/thread/CMakeFiles/ThreadPool.dir
+  TARGET_COMPILE_PDB = src/thread/CMakeFiles/ThreadPool.dir/ThreadPool.pdb
+  TARGET_PDB = ../lib/libThreadPool.pdb
 
 build src/thread/CMakeFiles/ThreadPool.dir/thread.cpp.o: CXX_COMPILER__ThreadPool_Debug /home/breeze/exercise/web/src/thread/thread.cpp || cmake_object_order_depends_target_ThreadPool
   DEP_FILE = src/thread/CMakeFiles/ThreadPool.dir/thread.cpp.o.d
@@ -304,6 +323,8 @@ build src/thread/CMakeFiles/ThreadPool.dir/thread.cpp.o: CXX_COMPILER__ThreadPoo
   INCLUDES = -I/home/breeze/exercise/web/src/utility
   OBJECT_DIR = src/thread/CMakeFiles/ThreadPool.dir
   OBJECT_FILE_DIR = src/thread/CMakeFiles/ThreadPool.dir
+  TARGET_COMPILE_PDB = src/thread/CMakeFiles/ThreadPool.dir/ThreadPool.pdb
+  TARGET_PDB = ../lib/libThreadPool.pdb
 
 build src/thread/CMakeFiles/ThreadPool.dir/thread_pool.cpp.o: CXX_COMPILER__ThreadPool_Debug /home/breeze/exercise/web/src/thread/thread_pool.cpp || cmake_object_order_depends_target_ThreadPool
   DEP_FILE = src/thread/CMakeFiles/ThreadPool.dir/thread_pool.cpp.o.d
@@ -311,6 +332,8 @@ build src/thread/CMakeFiles/ThreadPool.dir/thread_pool.cpp.o: CXX_COMPILER__Thre
   INCLUDES = -I/home/breeze/exercise/web/src/utility
   OBJECT_DIR = src/thread/CMakeFiles/ThreadPool.dir
   OBJECT_FILE_DIR = src/thread/CMakeFiles/ThreadPool.dir
+  TARGET_COMPILE_PDB = src/thread/CMakeFiles/ThreadPool.dir/ThreadPool.pdb
+  TARGET_PDB = ../lib/libThreadPool.pdb
 
 build src/thread/CMakeFiles/ThreadPool.dir/worker_thread.cpp.o: CXX_COMPILER__ThreadPool_Debug /home/breeze/exercise/web/src/thread/worker_thread.cpp || cmake_object_order_depends_target_ThreadPool
   DEP_FILE = src/thread/CMakeFiles/ThreadPool.dir/worker_thread.cpp.o.d
@@ -318,6 +341,8 @@ build src/thread/CMakeFiles/ThreadPool.dir/worker_thread.cpp.o: CXX_COMPILER__Th
   INCLUDES = -I/home/breeze/exercise/web/src/utility
   OBJECT_DIR = src/thread/CMakeFiles/ThreadPool.dir
   OBJECT_FILE_DIR = src/thread/CMakeFiles/ThreadPool.dir
+  TARGET_COMPILE_PDB = src/thread/CMakeFiles/ThreadPool.dir/ThreadPool.pdb
+  TARGET_PDB = ../lib/libThreadPool.pdb
 
 
 # =============================================================================
@@ -332,8 +357,9 @@ build ../lib/libThreadPool.a: CXX_STATIC_LIBRARY_LINKER__ThreadPool_Debug src/th
   OBJECT_DIR = src/thread/CMakeFiles/ThreadPool.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = src/thread/CMakeFiles/ThreadPool.dir/ThreadPool.pdb
   TARGET_FILE = ../lib/libThreadPool.a
-  TARGET_PDB = ThreadPool.a.dbg
+  TARGET_PDB = ../lib/libThreadPool.pdb
 
 
 #############################################
@@ -390,6 +416,8 @@ build src/socketHandler/CMakeFiles/socketHandler.dir/client_socket.cpp.o: CXX_CO
   INCLUDES = -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread
   OBJECT_DIR = src/socketHandler/CMakeFiles/socketHandler.dir
   OBJECT_FILE_DIR = src/socketHandler/CMakeFiles/socketHandler.dir
+  TARGET_COMPILE_PDB = src/socketHandler/CMakeFiles/socketHandler.dir/socketHandler.pdb
+  TARGET_PDB = ../lib/libsocketHandler.pdb
 
 build src/socketHandler/CMakeFiles/socketHandler.dir/echo_task.cpp.o: CXX_COMPILER__socketHandler_Debug /home/breeze/exercise/web/src/socketHandler/echo_task.cpp || cmake_object_order_depends_target_socketHandler
   DEP_FILE = src/socketHandler/CMakeFiles/socketHandler.dir/echo_task.cpp.o.d
@@ -397,6 +425,8 @@ build src/socketHandler/CMakeFiles/socketHandler.dir/echo_task.cpp.o: CXX_COMPIL
   INCLUDES = -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread
   OBJECT_DIR = src/socketHandler/CMakeFiles/socketHandler.dir
   OBJECT_FILE_DIR = src/socketHandler/CMakeFiles/socketHandler.dir
+  TARGET_COMPILE_PDB = src/socketHandler/CMakeFiles/socketHandler.dir/socketHandler.pdb
+  TARGET_PDB = ../lib/libsocketHandler.pdb
 
 build src/socketHandler/CMakeFiles/socketHandler.dir/event_poller.cpp.o: CXX_COMPILER__socketHandler_Debug /home/breeze/exercise/web/src/socketHandler/event_poller.cpp || cmake_object_order_depends_target_socketHandler
   DEP_FILE = src/socketHandler/CMakeFiles/socketHandler.dir/event_poller.cpp.o.d
@@ -404,6 +434,8 @@ build src/socketHandler/CMakeFiles/socketHandler.dir/event_poller.cpp.o: CXX_COM
   INCLUDES = -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread
   OBJECT_DIR = src/socketHandler/CMakeFiles/socketHandler.dir
   OBJECT_FILE_DIR = src/socketHandler/CMakeFiles/socketHandler.dir
+  TARGET_COMPILE_PDB = src/socketHandler/CMakeFiles/socketHandler.dir/socketHandler.pdb
+  TARGET_PDB = ../lib/libsocketHandler.pdb
 
 build src/socketHandler/CMakeFiles/socketHandler.dir/server_socket.cpp.o: CXX_COMPILER__socketHandler_Debug /home/breeze/exercise/web/src/socketHandler/server_socket.cpp || cmake_object_order_depends_target_socketHandler
   DEP_FILE = src/socketHandler/CMakeFiles/socketHandler.dir/server_socket.cpp.o.d
@@ -411,6 +443,8 @@ build src/socketHandler/CMakeFiles/socketHandler.dir/server_socket.cpp.o: CXX_CO
   INCLUDES = -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread
   OBJECT_DIR = src/socketHandler/CMakeFiles/socketHandler.dir
   OBJECT_FILE_DIR = src/socketHandler/CMakeFiles/socketHandler.dir
+  TARGET_COMPILE_PDB = src/socketHandler/CMakeFiles/socketHandler.dir/socketHandler.pdb
+  TARGET_PDB = ../lib/libsocketHandler.pdb
 
 build src/socketHandler/CMakeFiles/socketHandler.dir/socket.cpp.o: CXX_COMPILER__socketHandler_Debug /home/breeze/exercise/web/src/socketHandler/socket.cpp || cmake_object_order_depends_target_socketHandler
   DEP_FILE = src/socketHandler/CMakeFiles/socketHandler.dir/socket.cpp.o.d
@@ -418,6 +452,8 @@ build src/socketHandler/CMakeFiles/socketHandler.dir/socket.cpp.o: CXX_COMPILER_
   INCLUDES = -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread
   OBJECT_DIR = src/socketHandler/CMakeFiles/socketHandler.dir
   OBJECT_FILE_DIR = src/socketHandler/CMakeFiles/socketHandler.dir
+  TARGET_COMPILE_PDB = src/socketHandler/CMakeFiles/socketHandler.dir/socketHandler.pdb
+  TARGET_PDB = ../lib/libsocketHandler.pdb
 
 build src/socketHandler/CMakeFiles/socketHandler.dir/socket_handler.cpp.o: CXX_COMPILER__socketHandler_Debug /home/breeze/exercise/web/src/socketHandler/socket_handler.cpp || cmake_object_order_depends_target_socketHandler
   DEP_FILE = src/socketHandler/CMakeFiles/socketHandler.dir/socket_handler.cpp.o.d
@@ -425,6 +461,8 @@ build src/socketHandler/CMakeFiles/socketHandler.dir/socket_handler.cpp.o: CXX_C
   INCLUDES = -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/thread
   OBJECT_DIR = src/socketHandler/CMakeFiles/socketHandler.dir
   OBJECT_FILE_DIR = src/socketHandler/CMakeFiles/socketHandler.dir
+  TARGET_COMPILE_PDB = src/socketHandler/CMakeFiles/socketHandler.dir/socketHandler.pdb
+  TARGET_PDB = ../lib/libsocketHandler.pdb
 
 
 # =============================================================================
@@ -439,8 +477,9 @@ build ../lib/libsocketHandler.a: CXX_STATIC_LIBRARY_LINKER__socketHandler_Debug 
   OBJECT_DIR = src/socketHandler/CMakeFiles/socketHandler.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = src/socketHandler/CMakeFiles/socketHandler.dir/socketHandler.pdb
   TARGET_FILE = ../lib/libsocketHandler.a
-  TARGET_PDB = socketHandler.a.dbg
+  TARGET_PDB = ../lib/libsocketHandler.pdb
 
 
 #############################################
@@ -497,6 +536,8 @@ build src/frame/CMakeFiles/frame.dir/server.cpp.o: CXX_COMPILER__frame_Debug /ho
   INCLUDES = -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/socketHandler -I/home/breeze/exercise/web/src/thread
   OBJECT_DIR = src/frame/CMakeFiles/frame.dir
   OBJECT_FILE_DIR = src/frame/CMakeFiles/frame.dir
+  TARGET_COMPILE_PDB = src/frame/CMakeFiles/frame.dir/frame.pdb
+  TARGET_PDB = ../lib/libframe.pdb
 
 
 # =============================================================================
@@ -511,8 +552,9 @@ build ../lib/libframe.a: CXX_STATIC_LIBRARY_LINKER__frame_Debug src/frame/CMakeF
   OBJECT_DIR = src/frame/CMakeFiles/frame.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = src/frame/CMakeFiles/frame.dir/frame.pdb
   TARGET_FILE = ../lib/libframe.a
-  TARGET_PDB = frame.a.dbg
+  TARGET_PDB = ../lib/libframe.pdb
 
 
 #############################################
@@ -554,46 +596,6 @@ build src/frame/rebuild_cache: phony src/frame/CMakeFiles/rebuild_cache.util
 # /home/breeze/exercise/web/src/CMakeLists.txt
 # =============================================================================
 
-
-#############################################
-# Utility command for test
-
-build src/engine/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/breeze/exercise/web/build/src/engine && /usr/bin/ctest --force-new-ctest-process
-  DESC = Running tests...
-  pool = console
-  restat = 1
-
-build src/engine/test: phony src/engine/CMakeFiles/test.util
-
-
-#############################################
-# Utility command for edit_cache
-
-build src/engine/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/breeze/exercise/web/build/src/engine && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build src/engine/edit_cache: phony src/engine/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build src/engine/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/breeze/exercise/web/build/src/engine && /usr/bin/cmake --regenerate-during-build -S/home/breeze/exercise/web -B/home/breeze/exercise/web/build
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build src/engine/rebuild_cache: phony src/engine/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/breeze/exercise/web/src/CMakeLists.txt
-# =============================================================================
-
 # =============================================================================
 # Object build statements for SHARED_LIBRARY target echo_plugin
 
@@ -610,6 +612,28 @@ build src/plugin/CMakeFiles/echo_plugin.dir/echo_plugin.cpp.o: CXX_COMPILER__ech
   INCLUDES = -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/utility
   OBJECT_DIR = src/plugin/CMakeFiles/echo_plugin.dir
   OBJECT_FILE_DIR = src/plugin/CMakeFiles/echo_plugin.dir
+  TARGET_COMPILE_PDB = src/plugin/CMakeFiles/echo_plugin.dir/
+  TARGET_PDB = ../plugin/libecho_plugin.pdb
+
+build src/plugin/CMakeFiles/echo_plugin.dir/__/utility/Logger.cpp.o: CXX_COMPILER__echo_plugin_Debug /home/breeze/exercise/web/src/utility/Logger.cpp || cmake_object_order_depends_target_echo_plugin
+  DEFINES = -Decho_plugin_EXPORTS
+  DEP_FILE = src/plugin/CMakeFiles/echo_plugin.dir/__/utility/Logger.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++17
+  INCLUDES = -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/utility
+  OBJECT_DIR = src/plugin/CMakeFiles/echo_plugin.dir
+  OBJECT_FILE_DIR = src/plugin/CMakeFiles/echo_plugin.dir/__/utility
+  TARGET_COMPILE_PDB = src/plugin/CMakeFiles/echo_plugin.dir/
+  TARGET_PDB = ../plugin/libecho_plugin.pdb
+
+build src/plugin/CMakeFiles/echo_plugin.dir/__/utility/system.cpp.o: CXX_COMPILER__echo_plugin_Debug /home/breeze/exercise/web/src/utility/system.cpp || cmake_object_order_depends_target_echo_plugin
+  DEFINES = -Decho_plugin_EXPORTS
+  DEP_FILE = src/plugin/CMakeFiles/echo_plugin.dir/__/utility/system.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++17
+  INCLUDES = -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/utility
+  OBJECT_DIR = src/plugin/CMakeFiles/echo_plugin.dir
+  OBJECT_FILE_DIR = src/plugin/CMakeFiles/echo_plugin.dir/__/utility
+  TARGET_COMPILE_PDB = src/plugin/CMakeFiles/echo_plugin.dir/
+  TARGET_PDB = ../plugin/libecho_plugin.pdb
 
 
 # =============================================================================
@@ -617,17 +641,18 @@ build src/plugin/CMakeFiles/echo_plugin.dir/echo_plugin.cpp.o: CXX_COMPILER__ech
 
 
 #############################################
-# Link the shared library ../src/plugin/libecho_plugin.so
+# Link the shared library ../plugin/libecho_plugin.so
 
-build ../src/plugin/libecho_plugin.so: CXX_SHARED_LIBRARY_LINKER__echo_plugin_Debug src/plugin/CMakeFiles/echo_plugin.dir/echo_plugin.cpp.o
+build ../plugin/libecho_plugin.so: CXX_SHARED_LIBRARY_LINKER__echo_plugin_Debug src/plugin/CMakeFiles/echo_plugin.dir/echo_plugin.cpp.o src/plugin/CMakeFiles/echo_plugin.dir/__/utility/Logger.cpp.o src/plugin/CMakeFiles/echo_plugin.dir/__/utility/system.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = src/plugin/CMakeFiles/echo_plugin.dir
   POST_BUILD = :
   PRE_LINK = :
   SONAME = libecho_plugin.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = ../src/plugin/libecho_plugin.so
-  TARGET_PDB = echo_plugin.so.dbg
+  TARGET_COMPILE_PDB = src/plugin/CMakeFiles/echo_plugin.dir/
+  TARGET_FILE = ../plugin/libecho_plugin.so
+  TARGET_PDB = ../plugin/libecho_plugin.pdb
 
 
 #############################################
@@ -665,6 +690,374 @@ build src/plugin/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build src/plugin/rebuild_cache: phony src/plugin/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/breeze/exercise/web/src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target xml-parser
+
+
+#############################################
+# Order-only phony target for xml-parser
+
+build cmake_object_order_depends_target_xml-parser: phony || src/xml/CMakeFiles/xml-parser.dir
+
+build src/xml/CMakeFiles/xml-parser.dir/parser.cpp.o: CXX_COMPILER__xml-parser_Debug /home/breeze/exercise/web/src/xml/parser.cpp || cmake_object_order_depends_target_xml-parser
+  DEP_FILE = src/xml/CMakeFiles/xml-parser.dir/parser.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/breeze/exercise/web/src/utility
+  OBJECT_DIR = src/xml/CMakeFiles/xml-parser.dir
+  OBJECT_FILE_DIR = src/xml/CMakeFiles/xml-parser.dir
+  TARGET_COMPILE_PDB = src/xml/CMakeFiles/xml-parser.dir/xml-parser.pdb
+  TARGET_PDB = ../lib/libxml-parser.pdb
+
+build src/xml/CMakeFiles/xml-parser.dir/xml.cpp.o: CXX_COMPILER__xml-parser_Debug /home/breeze/exercise/web/src/xml/xml.cpp || cmake_object_order_depends_target_xml-parser
+  DEP_FILE = src/xml/CMakeFiles/xml-parser.dir/xml.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/breeze/exercise/web/src/utility
+  OBJECT_DIR = src/xml/CMakeFiles/xml-parser.dir
+  OBJECT_FILE_DIR = src/xml/CMakeFiles/xml-parser.dir
+  TARGET_COMPILE_PDB = src/xml/CMakeFiles/xml-parser.dir/xml-parser.pdb
+  TARGET_PDB = ../lib/libxml-parser.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target xml-parser
+
+
+#############################################
+# Link the static library ../lib/libxml-parser.a
+
+build ../lib/libxml-parser.a: CXX_STATIC_LIBRARY_LINKER__xml-parser_Debug src/xml/CMakeFiles/xml-parser.dir/parser.cpp.o src/xml/CMakeFiles/xml-parser.dir/xml.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = src/xml/CMakeFiles/xml-parser.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = src/xml/CMakeFiles/xml-parser.dir/xml-parser.pdb
+  TARGET_FILE = ../lib/libxml-parser.a
+  TARGET_PDB = ../lib/libxml-parser.pdb
+
+
+#############################################
+# Utility command for test
+
+build src/xml/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/xml && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build src/xml/test: phony src/xml/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/xml/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/xml && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/xml/edit_cache: phony src/xml/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/xml/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/xml && /usr/bin/cmake --regenerate-during-build -S/home/breeze/exercise/web -B/home/breeze/exercise/web/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/xml/rebuild_cache: phony src/xml/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/breeze/exercise/web/src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target engine
+
+
+#############################################
+# Order-only phony target for engine
+
+build cmake_object_order_depends_target_engine: phony || cmake_object_order_depends_target_utility cmake_object_order_depends_target_xml-parser
+
+build src/engine/CMakeFiles/engine.dir/plugin_helper.cpp.o: CXX_COMPILER__engine_Debug /home/breeze/exercise/web/src/engine/plugin_helper.cpp || cmake_object_order_depends_target_engine
+  DEP_FILE = src/engine/CMakeFiles/engine.dir/plugin_helper.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/breeze/exercise/web/src/xml -I/home/breeze/exercise/web/src/utility
+  OBJECT_DIR = src/engine/CMakeFiles/engine.dir
+  OBJECT_FILE_DIR = src/engine/CMakeFiles/engine.dir
+  TARGET_COMPILE_PDB = src/engine/CMakeFiles/engine.dir/engine.pdb
+  TARGET_PDB = ../lib/libengine.pdb
+
+build src/engine/CMakeFiles/engine.dir/work.cpp.o: CXX_COMPILER__engine_Debug /home/breeze/exercise/web/src/engine/work.cpp || cmake_object_order_depends_target_engine
+  DEP_FILE = src/engine/CMakeFiles/engine.dir/work.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/breeze/exercise/web/src/xml -I/home/breeze/exercise/web/src/utility
+  OBJECT_DIR = src/engine/CMakeFiles/engine.dir
+  OBJECT_FILE_DIR = src/engine/CMakeFiles/engine.dir
+  TARGET_COMPILE_PDB = src/engine/CMakeFiles/engine.dir/engine.pdb
+  TARGET_PDB = ../lib/libengine.pdb
+
+build src/engine/CMakeFiles/engine.dir/workflow.cpp.o: CXX_COMPILER__engine_Debug /home/breeze/exercise/web/src/engine/workflow.cpp || cmake_object_order_depends_target_engine
+  DEP_FILE = src/engine/CMakeFiles/engine.dir/workflow.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/breeze/exercise/web/src/xml -I/home/breeze/exercise/web/src/utility
+  OBJECT_DIR = src/engine/CMakeFiles/engine.dir
+  OBJECT_FILE_DIR = src/engine/CMakeFiles/engine.dir
+  TARGET_COMPILE_PDB = src/engine/CMakeFiles/engine.dir/engine.pdb
+  TARGET_PDB = ../lib/libengine.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target engine
+
+
+#############################################
+# Link the static library ../lib/libengine.a
+
+build ../lib/libengine.a: CXX_STATIC_LIBRARY_LINKER__engine_Debug src/engine/CMakeFiles/engine.dir/plugin_helper.cpp.o src/engine/CMakeFiles/engine.dir/work.cpp.o src/engine/CMakeFiles/engine.dir/workflow.cpp.o || ../lib/libutility.a ../lib/libxml-parser.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = src/engine/CMakeFiles/engine.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = src/engine/CMakeFiles/engine.dir/engine.pdb
+  TARGET_FILE = ../lib/libengine.a
+  TARGET_PDB = ../lib/libengine.pdb
+
+
+#############################################
+# Utility command for test
+
+build src/engine/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/engine && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build src/engine/test: phony src/engine/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/engine/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/engine && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/engine/edit_cache: phony src/engine/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/engine/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/src/engine && /usr/bin/cmake --regenerate-during-build -S/home/breeze/exercise/web -B/home/breeze/exercise/web/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/engine/rebuild_cache: phony src/engine/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/breeze/exercise/web/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build test/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/test && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test/test: phony test/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/test && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build test/edit_cache: phony test/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/test && /usr/bin/cmake --regenerate-during-build -S/home/breeze/exercise/web -B/home/breeze/exercise/web/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/rebuild_cache: phony test/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/breeze/exercise/web/test/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target engine_context_test
+
+
+#############################################
+# Order-only phony target for engine_context_test
+
+build cmake_object_order_depends_target_engine_context_test: phony || test/engine_context_test/CMakeFiles/engine_context_test.dir
+
+build test/engine_context_test/CMakeFiles/engine_context_test.dir/engine_context_test.cpp.o: CXX_COMPILER__engine_context_test_Debug /home/breeze/exercise/web/test/engine_context_test/engine_context_test.cpp || cmake_object_order_depends_target_engine_context_test
+  DEP_FILE = test/engine_context_test/CMakeFiles/engine_context_test.dir/engine_context_test.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/breeze/exercise/web/src/engine
+  OBJECT_DIR = test/engine_context_test/CMakeFiles/engine_context_test.dir
+  OBJECT_FILE_DIR = test/engine_context_test/CMakeFiles/engine_context_test.dir
+  TARGET_COMPILE_PDB = test/engine_context_test/CMakeFiles/engine_context_test.dir/
+  TARGET_PDB = ../bin/test/engine_context_test.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target engine_context_test
+
+
+#############################################
+# Link the executable ../bin/test/engine_context_test
+
+build ../bin/test/engine_context_test: CXX_EXECUTABLE_LINKER__engine_context_test_Debug test/engine_context_test/CMakeFiles/engine_context_test.dir/engine_context_test.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = test/engine_context_test/CMakeFiles/engine_context_test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = test/engine_context_test/CMakeFiles/engine_context_test.dir/
+  TARGET_FILE = ../bin/test/engine_context_test
+  TARGET_PDB = ../bin/test/engine_context_test.pdb
+
+
+#############################################
+# Utility command for test
+
+build test/engine_context_test/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/test/engine_context_test && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test/engine_context_test/test: phony test/engine_context_test/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/engine_context_test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/test/engine_context_test && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build test/engine_context_test/edit_cache: phony test/engine_context_test/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/engine_context_test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/test/engine_context_test && /usr/bin/cmake --regenerate-during-build -S/home/breeze/exercise/web -B/home/breeze/exercise/web/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/engine_context_test/rebuild_cache: phony test/engine_context_test/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/breeze/exercise/web/test/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target engine_workflow_test
+
+
+#############################################
+# Order-only phony target for engine_workflow_test
+
+build cmake_object_order_depends_target_engine_workflow_test: phony || cmake_object_order_depends_target_engine cmake_object_order_depends_target_utility cmake_object_order_depends_target_xml-parser
+
+build test/engine_workflow_test/CMakeFiles/engine_workflow_test.dir/engine_workflow_test.cpp.o: CXX_COMPILER__engine_workflow_test_Debug /home/breeze/exercise/web/test/engine_workflow_test/engine_workflow_test.cpp || cmake_object_order_depends_target_engine_workflow_test
+  DEP_FILE = test/engine_workflow_test/CMakeFiles/engine_workflow_test.dir/engine_workflow_test.cpp.o.d
+  FLAGS = -g -g -std=gnu++17
+  INCLUDES = -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/xml
+  OBJECT_DIR = test/engine_workflow_test/CMakeFiles/engine_workflow_test.dir
+  OBJECT_FILE_DIR = test/engine_workflow_test/CMakeFiles/engine_workflow_test.dir
+  TARGET_COMPILE_PDB = test/engine_workflow_test/CMakeFiles/engine_workflow_test.dir/
+  TARGET_PDB = ../bin/test/engine_workflow_test.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target engine_workflow_test
+
+
+#############################################
+# Link the executable ../bin/test/engine_workflow_test
+
+build ../bin/test/engine_workflow_test: CXX_EXECUTABLE_LINKER__engine_workflow_test_Debug test/engine_workflow_test/CMakeFiles/engine_workflow_test.dir/engine_workflow_test.cpp.o | ../lib/libengine.a ../lib/libutility.a ../lib/libxml-parser.a || ../lib/libengine.a ../lib/libutility.a ../lib/libxml-parser.a
+  FLAGS = -g
+  LINK_LIBRARIES = ../lib/libengine.a  ../lib/libutility.a  ../lib/libxml-parser.a
+  OBJECT_DIR = test/engine_workflow_test/CMakeFiles/engine_workflow_test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = test/engine_workflow_test/CMakeFiles/engine_workflow_test.dir/
+  TARGET_FILE = ../bin/test/engine_workflow_test
+  TARGET_PDB = ../bin/test/engine_workflow_test.pdb
+
+
+#############################################
+# Utility command for test
+
+build test/engine_workflow_test/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/test/engine_workflow_test && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test/engine_workflow_test/test: phony test/engine_workflow_test/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/engine_workflow_test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/test/engine_workflow_test && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build test/engine_workflow_test/edit_cache: phony test/engine_workflow_test/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/engine_workflow_test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/breeze/exercise/web/build/test/engine_workflow_test && /usr/bin/cmake --regenerate-during-build -S/home/breeze/exercise/web -B/home/breeze/exercise/web/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/engine_workflow_test/rebuild_cache: phony test/engine_workflow_test/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build Client: phony ../bin/Client
@@ -673,13 +1066,21 @@ build Server: phony ../bin/Server
 
 build ThreadPool: phony ../lib/libThreadPool.a
 
-build echo_plugin: phony ../src/plugin/libecho_plugin.so
+build echo_plugin: phony ../plugin/libecho_plugin.so
+
+build engine: phony ../lib/libengine.a
+
+build engine_context_test: phony ../bin/test/engine_context_test
+
+build engine_workflow_test: phony ../bin/test/engine_workflow_test
 
 build frame: phony ../lib/libframe.a
 
 build libThreadPool.a: phony ../lib/libThreadPool.a
 
-build libecho_plugin.so: phony ../src/plugin/libecho_plugin.so
+build libecho_plugin.so: phony ../plugin/libecho_plugin.so
+
+build libengine.a: phony ../lib/libengine.a
 
 build libframe.a: phony ../lib/libframe.a
 
@@ -687,9 +1088,13 @@ build libsocketHandler.a: phony ../lib/libsocketHandler.a
 
 build libutility.a: phony ../lib/libutility.a
 
+build libxml-parser.a: phony ../lib/libxml-parser.a
+
 build socketHandler: phony ../lib/libsocketHandler.a
 
 build utility: phony ../lib/libutility.a
+
+build xml-parser: phony ../lib/libxml-parser.a
 
 # =============================================================================
 # Folder targets.
@@ -699,21 +1104,21 @@ build utility: phony ../lib/libutility.a
 #############################################
 # Folder: /home/breeze/exercise/web/build
 
-build all: phony src/all
+build all: phony src/all test/all
 
 # =============================================================================
 
 #############################################
 # Folder: /home/breeze/exercise/web/build/src
 
-build src/all: phony ../bin/Server ../bin/Client src/utility/all src/thread/all src/socketHandler/all src/frame/all src/engine/all src/plugin/all
+build src/all: phony ../bin/Server ../bin/Client src/utility/all src/thread/all src/socketHandler/all src/frame/all src/plugin/all src/xml/all src/engine/all
 
 # =============================================================================
 
 #############################################
 # Folder: /home/breeze/exercise/web/build/src/engine
 
-build src/engine/all: phony
+build src/engine/all: phony ../lib/libengine.a
 
 # =============================================================================
 
@@ -727,7 +1132,7 @@ build src/frame/all: phony ../lib/libframe.a
 #############################################
 # Folder: /home/breeze/exercise/web/build/src/plugin
 
-build src/plugin/all: phony ../src/plugin/libecho_plugin.so
+build src/plugin/all: phony ../plugin/libecho_plugin.so
 
 # =============================================================================
 
@@ -751,20 +1156,48 @@ build src/thread/all: phony ../lib/libThreadPool.a
 build src/utility/all: phony ../lib/libutility.a
 
 # =============================================================================
+
+#############################################
+# Folder: /home/breeze/exercise/web/build/src/xml
+
+build src/xml/all: phony ../lib/libxml-parser.a
+
+# =============================================================================
+
+#############################################
+# Folder: /home/breeze/exercise/web/build/test
+
+build test/all: phony test/engine_context_test/all test/engine_workflow_test/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/breeze/exercise/web/build/test/engine_context_test
+
+build test/engine_context_test/all: phony ../bin/test/engine_context_test
+
+# =============================================================================
+
+#############################################
+# Folder: /home/breeze/exercise/web/build/test/engine_workflow_test
+
+build test/engine_workflow_test/all: phony ../bin/test/engine_workflow_test
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../src/CMakeLists.txt ../src/engine/CMakeLists.txt ../src/frame/CMakeLists.txt ../src/plugin/CMakeLists.txt ../src/socketHandler/CMakeLists.txt ../src/thread/CMakeLists.txt ../src/utility/CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../src/CMakeLists.txt ../src/engine/CMakeLists.txt ../src/frame/CMakeLists.txt ../src/plugin/CMakeLists.txt ../src/socketHandler/CMakeLists.txt ../src/thread/CMakeLists.txt ../src/utility/CMakeLists.txt ../src/xml/CMakeLists.txt ../test/CMakeLists.txt ../test/engine_context_test/CMakeLists.txt ../test/engine_workflow_test/CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake-3.22/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-FindBinUtils.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../src/CMakeLists.txt ../src/engine/CMakeLists.txt ../src/frame/CMakeLists.txt ../src/plugin/CMakeLists.txt ../src/socketHandler/CMakeLists.txt ../src/thread/CMakeLists.txt ../src/utility/CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../src/CMakeLists.txt ../src/engine/CMakeLists.txt ../src/frame/CMakeLists.txt ../src/plugin/CMakeLists.txt ../src/socketHandler/CMakeLists.txt ../src/thread/CMakeLists.txt ../src/utility/CMakeLists.txt ../src/xml/CMakeLists.txt ../test/CMakeLists.txt ../test/engine_context_test/CMakeLists.txt ../test/engine_workflow_test/CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake-3.22/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-FindBinUtils.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
 
 
 #############################################

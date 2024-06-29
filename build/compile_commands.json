@@ -11,22 +11,22 @@
 },
 {
   "directory": "/home/breeze/exercise/web/build",
-  "command": "/usr/bin/clang++-15 -g -std=gnu++17 -o src/utility/CMakeFiles/utility.dir/Logger.cpp.o -c /home/breeze/exercise/web/src/utility/Logger.cpp",
+  "command": "/usr/bin/clang++-15 -g -fPIC -std=gnu++17 -o src/utility/CMakeFiles/utility.dir/Logger.cpp.o -c /home/breeze/exercise/web/src/utility/Logger.cpp",
   "file": "/home/breeze/exercise/web/src/utility/Logger.cpp"
 },
 {
   "directory": "/home/breeze/exercise/web/build",
-  "command": "/usr/bin/clang++-15 -g -std=gnu++17 -o src/utility/CMakeFiles/utility.dir/Value.cpp.o -c /home/breeze/exercise/web/src/utility/Value.cpp",
+  "command": "/usr/bin/clang++-15 -g -fPIC -std=gnu++17 -o src/utility/CMakeFiles/utility.dir/Value.cpp.o -c /home/breeze/exercise/web/src/utility/Value.cpp",
   "file": "/home/breeze/exercise/web/src/utility/Value.cpp"
 },
 {
   "directory": "/home/breeze/exercise/web/build",
-  "command": "/usr/bin/clang++-15 -g -std=gnu++17 -o src/utility/CMakeFiles/utility.dir/iniFile.cpp.o -c /home/breeze/exercise/web/src/utility/iniFile.cpp",
+  "command": "/usr/bin/clang++-15 -g -fPIC -std=gnu++17 -o src/utility/CMakeFiles/utility.dir/iniFile.cpp.o -c /home/breeze/exercise/web/src/utility/iniFile.cpp",
   "file": "/home/breeze/exercise/web/src/utility/iniFile.cpp"
 },
 {
   "directory": "/home/breeze/exercise/web/build",
-  "command": "/usr/bin/clang++-15 -g -std=gnu++17 -o src/utility/CMakeFiles/utility.dir/system.cpp.o -c /home/breeze/exercise/web/src/utility/system.cpp",
+  "command": "/usr/bin/clang++-15 -g -fPIC -std=gnu++17 -o src/utility/CMakeFiles/utility.dir/system.cpp.o -c /home/breeze/exercise/web/src/utility/system.cpp",
   "file": "/home/breeze/exercise/web/src/utility/system.cpp"
 },
 {
@@ -93,5 +93,50 @@
   "directory": "/home/breeze/exercise/web/build",
   "command": "/usr/bin/clang++-15 -Decho_plugin_EXPORTS -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/utility -g -fPIC -std=gnu++17 -o src/plugin/CMakeFiles/echo_plugin.dir/echo_plugin.cpp.o -c /home/breeze/exercise/web/src/plugin/echo_plugin.cpp",
   "file": "/home/breeze/exercise/web/src/plugin/echo_plugin.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -Decho_plugin_EXPORTS -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/utility -g -fPIC -std=gnu++17 -o src/plugin/CMakeFiles/echo_plugin.dir/__/utility/Logger.cpp.o -c /home/breeze/exercise/web/src/utility/Logger.cpp",
+  "file": "/home/breeze/exercise/web/src/utility/Logger.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -Decho_plugin_EXPORTS -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/utility -g -fPIC -std=gnu++17 -o src/plugin/CMakeFiles/echo_plugin.dir/__/utility/system.cpp.o -c /home/breeze/exercise/web/src/utility/system.cpp",
+  "file": "/home/breeze/exercise/web/src/utility/system.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/utility -g -std=gnu++17 -o src/xml/CMakeFiles/xml-parser.dir/parser.cpp.o -c /home/breeze/exercise/web/src/xml/parser.cpp",
+  "file": "/home/breeze/exercise/web/src/xml/parser.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/utility -g -std=gnu++17 -o src/xml/CMakeFiles/xml-parser.dir/xml.cpp.o -c /home/breeze/exercise/web/src/xml/xml.cpp",
+  "file": "/home/breeze/exercise/web/src/xml/xml.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/xml -I/home/breeze/exercise/web/src/utility -g -std=gnu++17 -o src/engine/CMakeFiles/engine.dir/plugin_helper.cpp.o -c /home/breeze/exercise/web/src/engine/plugin_helper.cpp",
+  "file": "/home/breeze/exercise/web/src/engine/plugin_helper.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/xml -I/home/breeze/exercise/web/src/utility -g -std=gnu++17 -o src/engine/CMakeFiles/engine.dir/work.cpp.o -c /home/breeze/exercise/web/src/engine/work.cpp",
+  "file": "/home/breeze/exercise/web/src/engine/work.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/xml -I/home/breeze/exercise/web/src/utility -g -std=gnu++17 -o src/engine/CMakeFiles/engine.dir/workflow.cpp.o -c /home/breeze/exercise/web/src/engine/workflow.cpp",
+  "file": "/home/breeze/exercise/web/src/engine/workflow.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/engine -g -std=gnu++17 -o test/engine_context_test/CMakeFiles/engine_context_test.dir/engine_context_test.cpp.o -c /home/breeze/exercise/web/test/engine_context_test/engine_context_test.cpp",
+  "file": "/home/breeze/exercise/web/test/engine_context_test/engine_context_test.cpp"
+},
+{
+  "directory": "/home/breeze/exercise/web/build",
+  "command": "/usr/bin/clang++-15 -I/home/breeze/exercise/web/src/engine -I/home/breeze/exercise/web/src/utility -I/home/breeze/exercise/web/src/xml -g -g -std=gnu++17 -o test/engine_workflow_test/CMakeFiles/engine_workflow_test.dir/engine_workflow_test.cpp.o -c /home/breeze/exercise/web/test/engine_workflow_test/engine_workflow_test.cpp",
+  "file": "/home/breeze/exercise/web/test/engine_workflow_test/engine_workflow_test.cpp"
 }
 ]

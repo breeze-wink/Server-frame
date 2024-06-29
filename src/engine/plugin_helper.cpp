@@ -18,7 +18,7 @@ bool PluginHelper::load(const string& plugin)
         return true;
     }
     auto sys = Singleton<System>::Instance();
-    string filename = sys -> get_root_path() + "plugin/" + plugin; 
+    string filename = sys -> get_root_path() + "plugin/lib" + plugin; 
 
     void* handle = dlopen(filename.c_str(), RTLD_GLOBAL | RTLD_LAZY);
     if (handle == nullptr)

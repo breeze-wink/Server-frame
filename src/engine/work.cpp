@@ -21,13 +21,14 @@ void Work::append(Plugin* plugin)
     m_plugins.push_back(plugin);
 }
 
-bool Work::run()
+bool Work::run(Context& ctx)
 {
     for (auto it = m_plugins.begin(); it != m_plugins.end(); ++ it)
     {
         if ((*it) -> get_switch())
         {
-            if (!(*it) -> run())
+            //将ctx再传递给各个插件
+            if (!(*it) -> run(ctx))
             {
                 break;
             }

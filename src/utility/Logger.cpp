@@ -1,4 +1,6 @@
 #include "Logger.h"
+#include <cerrno>
+#include <cstring>
 #include <sstream>
 #include <iostream>
 
@@ -13,9 +15,16 @@ const char* Logger::s_level[LOG_COUNT] =
 void Logger::open(const std::string &fileName)
 {
     m_fileName = fileName;
+
+    if (m_ofs.is_open())
+    {
+        m_ofs.close();
+    }
+
     m_ofs.open(fileName, std::ios::app);
     if(m_ofs.fail())
     {
+        std::cout << "errmsg = " << strerror(errno) << std::endl;
         throw std::runtime_error("open log file failed: " + fileName);
     }
     //这里考虑翻滚的时候要重置长度, 以下写法比重置为0更准确

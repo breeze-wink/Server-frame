@@ -12,7 +12,7 @@ namespace breeze::plugin
         ~EchoPlugin();
 
         
-        virtual bool run();
+        virtual bool run(Context& ctx) override;
     };
     
     DECLARE_PLUGIN(EchoPlugin)

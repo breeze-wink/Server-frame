@@ -2,6 +2,7 @@
 
 #include <vector>
 #include "plugin.h"
+#include "context.h"
 
 namespace breeze::engine
 {
@@ -12,7 +13,7 @@ namespace breeze::engine
         ~Work();
 
         void append(Plugin* plugin);
-        bool run();
+        bool run(Context& ctx);
         void set_id(int id);
         int get_id();
         

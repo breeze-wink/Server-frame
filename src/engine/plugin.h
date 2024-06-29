@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "context.h"
 using std::string;
 
 namespace breeze::engine
@@ -10,7 +11,7 @@ namespace breeze::engine
         Plugin() : m_switch(false) {};
         virtual ~Plugin() = default;
 
-        virtual bool run() = 0;
+        virtual bool run(Context& ctx) = 0;
 
         void set_name(const string& name)
         {
