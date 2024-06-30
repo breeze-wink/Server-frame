@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
 project(tiny-webserver
-    VERSION 0.0.1
-    DESCRIPTION "使用C++实现一个简易的webserver"
-    HOMEPAGE_URL "https://github.com/breeze-wink/tiny-Webserver"
+    VERSION 0.0.2
+    DESCRIPTION "使用C++实现一个简易的高并发server frame"
+    HOMEPAGE_URL "https://github.com/breeze-wink/Server-frame"
     LANGUAGES CXX
 )
 

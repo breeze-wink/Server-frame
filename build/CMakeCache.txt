@@ -131,16 +131,16 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/llvm-objcopy-15
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/llvm-objdump-15
 
 //Value Computed by CMake
-CMAKE_PROJECT_DESCRIPTION:STATIC=使用C++实现一个简易的webserver
+CMAKE_PROJECT_DESCRIPTION:STATIC=使用C++实现一个简易的高并发server frame
 
 //Value Computed by CMake
-CMAKE_PROJECT_HOMEPAGE_URL:STATIC=https://github.com/breeze-wink/tiny-Webserver
+CMAKE_PROJECT_HOMEPAGE_URL:STATIC=https://github.com/breeze-wink/Server-frame
 
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=tiny-webserver
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=0.0.1
+CMAKE_PROJECT_VERSION:STATIC=0.0.2
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
@@ -149,7 +149,7 @@ CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
 CMAKE_PROJECT_VERSION_MINOR:STATIC=0
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=1
+CMAKE_PROJECT_VERSION_PATCH:STATIC=2
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
